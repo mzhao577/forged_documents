@@ -1,32 +1,81 @@
-# Core dependencies
-requests>=2.28.0
+# =============================================================================
+# Medical Document Forgery Detection Pipeline - Requirements
+# =============================================================================
 
-# Document processing
+# -----------------------------------------------------------------------------
+# Core Dependencies (Required)
+# -----------------------------------------------------------------------------
+requests>=2.28.0
+numpy>=1.21.0
+
+# -----------------------------------------------------------------------------
+# AI Detection - Deep Learning (Required for AI detection)
+# -----------------------------------------------------------------------------
+torch>=2.0.0
+transformers>=4.30.0
+
+# -----------------------------------------------------------------------------
+# AI Detection - HuggingFace RoBERTa Detector
+# Uses: roberta-base-openai-detector model (~500MB RAM)
+# -----------------------------------------------------------------------------
+# No additional dependencies (uses transformers + torch above)
+
+# -----------------------------------------------------------------------------
+# AI Detection - Fast-DetectGPT Detector
+# Uses: GPT-2 model for curvature-based detection (~500MB RAM)
+# -----------------------------------------------------------------------------
+# No additional dependencies (uses transformers + torch above)
+
+# -----------------------------------------------------------------------------
+# AI Detection - Binoculars Detector
+# Uses: Falcon-7B models for perplexity comparison (~28GB RAM)
+# -----------------------------------------------------------------------------
+accelerate>=0.20.0
+scipy>=1.10.0
+
+# -----------------------------------------------------------------------------
+# AI Detection - ROUGE Similarity Checker
+# Uses: ROUGE metrics for pattern matching
+# -----------------------------------------------------------------------------
+rouge-score>=0.1.2
+
+# -----------------------------------------------------------------------------
+# Document Processing (Optional - for PDF/image analysis)
+# -----------------------------------------------------------------------------
 pytesseract>=0.3.10
 pdf2image>=1.16.0
 pdfplumber>=0.9.0
 Pillow>=9.0.0
 python-magic>=0.4.27
 
-# NLP and ML
+# -----------------------------------------------------------------------------
+# NLP and ML (Optional - for advanced text analysis)
+# -----------------------------------------------------------------------------
 spacy>=3.5.0
 scikit-learn>=1.2.0
 
-# AI Detection - Local Models (Required for local detection)
-transformers>=4.30.0
-torch>=2.0.0
-
-# ROUGE metrics (for pyrouge/similarity detection)
-rouge-score>=0.1.2
-
-# For Binoculars detector (requires ~28GB RAM for Falcon-7B models)
-accelerate>=0.20.0
-scipy
-
-# Optional: For 8-bit quantization (reduces Binoculars memory to ~14GB)
+# -----------------------------------------------------------------------------
+# Optional: GPU Acceleration
+# -----------------------------------------------------------------------------
+# For 8-bit quantization (reduces Binoculars memory to ~14GB):
 # bitsandbytes>=0.39.0
 
-# Note: API-based detectors only require 'requests' which is included above.
+# For CUDA GPU support, install PyTorch with CUDA:
+# pip install torch --index-url https://download.pytorch.org/whl/cu118
+
+# -----------------------------------------------------------------------------
+# Optional: LLMDet Detector (requires manual setup)
+# -----------------------------------------------------------------------------
+# LLMDet has complex dependencies not available on PyPI.
+# See: https://github.com/TrustedLLM/LLMDet for installation instructions.
+# If installed, also requires:
+# datasets>=2.0.0
+# lightgbm>=3.3.0
+
+# -----------------------------------------------------------------------------
+# API-Based Detectors (Optional)
+# -----------------------------------------------------------------------------
+# API-based detectors only require 'requests' which is included above.
 # Set environment variables for API keys:
 #   GPTZERO_API_KEY      - https://gptzero.me
 #   ORIGINALITY_API_KEY  - https://originality.ai
