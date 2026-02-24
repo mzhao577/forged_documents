@@ -1,0 +1,45 @@
+OFFICE VISIT NOTE
+
+Date of Service: 05/11/2009
+Patient ID: 00016F74...
+Provider: Dr. David Jackson, MD
+NPI: 1465101033
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code v561
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 129/72 mmHg
+  HR: 72 bpm
+  Temp: 98.9F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code V561 (ICD-9: V561)
+  - Diabetes mellitus type II without complication (25000)
+  - Diagnosis code 4329 (4329)
+  - Diagnosis code 436 (436)
+
+SERVICES PROVIDED:
+  - Procedure 99222 (99222)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. David Jackson, MD
+05/11/2009

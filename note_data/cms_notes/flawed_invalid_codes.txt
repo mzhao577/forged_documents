@@ -1,0 +1,16 @@
+OFFICE VISIT NOTE
+
+Date: 01/20/2024
+Provider: Dr. Bad Coder, MD
+NPI: 0000000000
+
+ASSESSMENT:
+1. Headache (ICD-9: ZZZ.999) - INVALID CODE
+2. Back pain (ICD-9: ABC.123) - INVALID CODE
+3. Anxiety (ICD-9: 999.99) - INVALID CODE
+
+PROCEDURES:
+- Office visit (CPT: 12345) - INVALID CODE
+- Blood draw (CPT: XXXXX) - INVALID CODE
+
+Dr. Bad Coder, MD

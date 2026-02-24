@@ -1,0 +1,32 @@
+PATIENT ENCOUNTER NOTE
+
+Date: 02/23/2026
+
+SUBJECTIVE: Patient presents with chest pain x 2 days
+
+---copied from external system---
+The patient is a 67 year old male with PMH significant for
+CORONARY ARTERY DISEASE, HYPERTENSION, AND HYPERLIPIDEMIA
+who presents today for evaluation of chest discomfort
+---end copy---
+
+Physical Exam:
+bp: 145/92  hr: 88  rr: 18
+HEART - regular rate and rhythm
+lungs - clear
+
+A/P:
+1.) CHEST PAIN - likely musculoskeletal
+     >> continue current meds
+     >> f/u prn
+
+** NOTE: This section imported from EMR template v2.3 **
+PATIENT EDUCATION PROVIDED:
+- Discussed warning signs requiring immediate attention
+- Reviewed medication compliance
+- Diet and exercise counseling provided
+** END IMPORTED SECTION **
+
+Signed electronically,
+Dr. Various Authors
+02/23/2026

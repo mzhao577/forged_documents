@@ -1,0 +1,25 @@
+PRESCRIPTION NOTE
+
+Date: 02/23/2026
+Patient: [REDACTED]
+Prescriber: Dr. Nancy Drew, MD
+NPI: 1357924680
+
+MEDICATIONS PRESCRIBED:
+
+1. Metformin 5000mg PO TID
+   #270 tablets, 3 refills
+
+2. Lisinopril 200mg PO daily
+   #90 tablets, 3 refills
+
+3. Warfarin 50mg PO daily
+   #30 tablets, 0 refills
+
+4. Oxycodone 80mg PO q4h PRN pain
+   #180 tablets, 5 refills
+
+DIAGNOSIS: Type 2 Diabetes (E11.9), Hypertension (I10)
+
+Electronically signed,
+Dr. Nancy Drew, MD

@@ -1,0 +1,52 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0007F12A...
+Admission Date: 05/22/2010
+Discharge Date: 06/12/2010
+Attending Physician: Dr. Linda Williams, MD
+NPI: 1907446990
+
+PATIENT DEMOGRAPHICS:
+90-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code V5789 (ICD-9: V5789)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code V5789 (ICD-9: V5789)
+  - Diagnosis code 4279 (ICD-9: 4279)
+  - Diagnosis code 2449 (ICD-9: 2449)
+  - Diagnosis code 2761 (ICD-9: 2761)
+  - Diabetes mellitus type II without complication (ICD-9: 25000)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Copd
+  - Depression
+  - Diabetes
+  - Ihd
+  - Osteoporosis
+  - Arthritis
+  - Stroke
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 950
+
+Electronically signed by Dr. Linda Williams, MD
+06/12/2010

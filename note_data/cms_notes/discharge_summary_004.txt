@@ -1,0 +1,44 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00016F74...
+Admission Date: 09/17/2009
+Discharge Date: 09/20/2009
+Attending Physician: Dr. Richard Lee, MD
+NPI: 4971602784
+
+PATIENT DEMOGRAPHICS:
+66-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 29590 (ICD-9: 29590)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 29623 (ICD-9: 29623)
+  - Diagnosis code 30390 (ICD-9: 30390)
+  - Diagnosis code 71690 (ICD-9: 71690)
+  - Diagnosis code 34590 (ICD-9: 34590)
+  - Diagnosis code V1581 (ICD-9: V1581)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - None documented
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 883
+
+Electronically signed by Dr. Richard Lee, MD
+09/20/2009

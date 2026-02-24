@@ -1,0 +1,48 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00196F07...
+Admission Date: 06/07/2009
+Discharge Date: 06/08/2009
+Attending Physician: Dr. Patricia Jones, MD
+NPI: 7087360414
+
+PATIENT DEMOGRAPHICS:
+51-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code V717 (ICD-9: V717)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Atrial fibrillation (ICD-9: 42731)
+  - Chronic airway obstruction, not elsewhere classified (ICD-9: 496)
+  - Other and unspecified angina pectoris (ICD-9: 4139)
+  - Intermediate coronary syndrome (ICD-9: 4111)
+  - Diagnosis code 78659 (ICD-9: 78659)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 226
+
+Electronically signed by Dr. Patricia Jones, MD
+06/08/2009

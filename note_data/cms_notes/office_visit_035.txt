@@ -1,0 +1,46 @@
+OFFICE VISIT NOTE
+
+Date of Service: 02/19/2010
+Patient ID: 00016F74...
+Provider: Dr. Richard Brown, MD
+NPI: 6818512452
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 36632
+
+HISTORY OF PRESENT ILLNESS:
+This is a 67-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 118/68 mmHg
+  HR: 60 bpm
+  Temp: 98.8F
+  SpO2: 96% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 36632 (ICD-9: 36632)
+  - Diagnosis code 37921 (37921)
+  - Diagnosis code 25001 (25001)
+  - Diagnosis code 36614 (36614)
+
+SERVICES PROVIDED:
+  - Procedure 92014 (92014)
+  - Procedure 2027F (2027F)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Richard Brown, MD
+02/19/2010

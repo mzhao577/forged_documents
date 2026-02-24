@@ -1,0 +1,45 @@
+OFFICE VISIT NOTE
+
+Date of Service: 07/16/2009
+Patient ID: 00016F74...
+Provider: Dr. James Garcia, MD
+NPI: 5390193581
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 78965
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 111/83 mmHg
+  HR: 60 bpm
+  Temp: 97.7F
+  SpO2: 100% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 78965 (ICD-9: 78965)
+  - Diagnosis code 78703 (78703)
+  - Diagnosis code 5770 (5770)
+  - Diagnosis code 78321 (78321)
+
+SERVICES PROVIDED:
+  - Procedure A0427 (A0427)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. James Garcia, MD
+07/16/2009

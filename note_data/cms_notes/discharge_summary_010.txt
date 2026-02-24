@@ -1,0 +1,53 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0007F12A...
+Admission Date: 06/16/2010
+Discharge Date: 06/19/2010
+Attending Physician: Dr. Patricia Smith, MD
+NPI: 4959466403
+
+PATIENT DEMOGRAPHICS:
+90-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 99641 (ICD-9: 99641)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 7366 (ICD-9: 7366)
+  - Diagnosis code V4365 (ICD-9: V4365)
+  - Diagnosis code 04104 (ICD-9: 04104)
+  - Diagnosis code V145 (ICD-9: V145)
+  - Other and unspecified hyperlipidemia (ICD-9: 2724)
+
+PROCEDURES PERFORMED:
+  - Procedure code 0073
+  - Procedure code 311
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Copd
+  - Depression
+  - Diabetes
+  - Ihd
+  - Osteoporosis
+  - Arthritis
+  - Stroke
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 456
+
+Electronically signed by Dr. Patricia Smith, MD
+06/19/2010

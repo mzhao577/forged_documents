@@ -1,0 +1,52 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0007F12A...
+Admission Date: 06/02/2010
+Discharge Date: 06/06/2010
+Attending Physician: Dr. Patricia Miller, MD
+NPI: 5838958809
+
+PATIENT DEMOGRAPHICS:
+90-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 49392 (ICD-9: 49392)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Obstructive chronic bronchitis with acute exacerbation (ICD-9: 49121)
+  - Diabetes mellitus type II, uncontrolled (ICD-9: 25002)
+  - Diagnosis code 2662 (ICD-9: 2662)
+  - Diagnosis code 04111 (ICD-9: 04111)
+  - Congestive heart failure, unspecified (ICD-9: 4280)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Copd
+  - Depression
+  - Diabetes
+  - Ihd
+  - Osteoporosis
+  - Arthritis
+  - Stroke
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 205
+
+Electronically signed by Dr. Patricia Miller, MD
+06/06/2010

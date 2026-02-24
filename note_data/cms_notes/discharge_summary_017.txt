@@ -1,0 +1,48 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00139C34...
+Admission Date: 06/10/2009
+Discharge Date: 06/15/2009
+Attending Physician: Dr. John Brown, MD
+NPI: 5827238413
+
+PATIENT DEMOGRAPHICS:
+86-year-old female
+
+ADMITTING DIAGNOSIS:
+Obstructive chronic bronchitis with acute exacerbation (ICD-9: 49121)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Obstructive chronic bronchitis with acute exacerbation (ICD-9: 49121)
+  - Diagnosis code 2752 (ICD-9: 2752)
+  - Diagnosis code 7812 (ICD-9: 7812)
+  - Diagnosis code 71690 (ICD-9: 71690)
+  - Depressive disorder, not elsewhere classified (ICD-9: 311)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Ckd
+  - Copd
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 202
+
+Electronically signed by Dr. John Brown, MD
+06/15/2009

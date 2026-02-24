@@ -1,0 +1,48 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00196F07...
+Admission Date: 03/18/2010
+Discharge Date: 03/24/2010
+Attending Physician: Dr. Sarah Garcia, MD
+NPI: 3149964648
+
+PATIENT DEMOGRAPHICS:
+52-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 41519 (ICD-9: 41519)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 41519 (ICD-9: 41519)
+  - Diagnosis code 4589 (ICD-9: 4589)
+  - Diagnosis code 7140 (ICD-9: 7140)
+  - Diagnosis code 1977 (ICD-9: 1977)
+  - Diagnosis code 79902 (ICD-9: 79902)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 178
+
+Electronically signed by Dr. Sarah Garcia, MD
+03/24/2010

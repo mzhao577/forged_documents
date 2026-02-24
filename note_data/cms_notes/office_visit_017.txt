@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 03/30/2009
+Patient ID: 00016F74...
+Provider: Dr. Robert Jones, MD
+NPI: 5994106487
+
+CHIEF COMPLAINT:
+Follow-up for hypertension, unspecified
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 123/70 mmHg
+  HR: 74 bpm
+  Temp: 98.7F
+  SpO2: 96% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Hypertension, unspecified (ICD-9: 4019)
+  - Diagnosis code 41400 (41400)
+  - Diagnosis code 43491 (43491)
+
+SERVICES PROVIDED:
+  - Office visit, established patient, low complexity (99213)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Robert Jones, MD
+03/30/2009

@@ -1,0 +1,34 @@
+PATIENT: [REDACTED]
+DATE OF SERVICE: 02/18/2026
+PROVIDER: Dr. Sarah Mitchell, MD
+NPI: 1234567893
+
+CHIEF COMPLAINT: Persistent cough for 2 weeks
+
+HISTORY OF PRESENT ILLNESS:
+Patient is a 45-year-old male presenting with productive cough x 2 weeks.
+Reports yellow-green sputum production, worse in the morning. Denies fever,
+chills, or night sweats. No hemoptysis. Associated with mild shortness of
+breath on exertion. No chest pain.
+
+PAST MEDICAL HISTORY:
+- Hypertension, well-controlled on lisinopril 10mg daily
+- Type 2 Diabetes Mellitus, A1C 6.8% on metformin 500mg BID
+
+MEDICATIONS:
+1. Lisinopril 10mg PO daily
+2. Metformin 500mg PO BID
+
+PHYSICAL EXAMINATION:
+Vitals: BP 128/82, HR 76, RR 16, Temp 98.6F, SpO2 97% RA
+General: Alert, no acute distress
+Lungs: Scattered rhonchi bilateral bases, no wheezes
+
+ASSESSMENT AND PLAN:
+1. Acute bronchitis (ICD-10: J20.9)
+   - Supportive care, increase fluids
+   - Benzonatate 100mg TID PRN cough
+   - Return if worsening or fever develops
+
+Electronically signed by Dr. Sarah Mitchell, MD
+02/18/2026

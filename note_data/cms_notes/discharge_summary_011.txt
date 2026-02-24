@@ -1,0 +1,44 @@
+DISCHARGE SUMMARY
+
+Patient ID: 000B97BA...
+Admission Date: 12/09/2009
+Discharge Date: 12/13/2009
+Attending Physician: Dr. Elizabeth Moore, MD
+NPI: 3115083157
+
+PATIENT DEMOGRAPHICS:
+71-year-old male
+
+ADMITTING DIAGNOSIS:
+Hypertension, unspecified (ICD-9: 4019)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 4010 (ICD-9: 4010)
+  - Diagnosis code 78791 (ICD-9: 78791)
+  - Diagnosis code 60000 (ICD-9: 60000)
+  - Coronary atherosclerosis of native coronary artery (ICD-9: 41401)
+  - Diagnosis code V1254 (ICD-9: V1254)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - None documented
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 241
+
+Electronically signed by Dr. Elizabeth Moore, MD
+12/13/2009

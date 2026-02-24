@@ -1,0 +1,47 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0011714C...
+Admission Date: 08/26/2009
+Discharge Date: 08/29/2009
+Attending Physician: Dr. Linda Anderson, MD
+NPI: 4256485181
+
+PATIENT DEMOGRAPHICS:
+69-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 72989 (ICD-9: 72989)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 43411 (ICD-9: 43411)
+  - Diagnosis code 27651 (ICD-9: 27651)
+  - Other and unspecified hyperlipidemia (ICD-9: 2724)
+  - Diagnosis code 36236 (ICD-9: 36236)
+  - Diagnosis code 78459 (ICD-9: 78459)
+
+PROCEDURES PERFORMED:
+  - Procedure code 9904
+  - Procedure code 4019
+  - Procedure code 53081
+
+CHRONIC CONDITIONS:
+  - Cancer
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 030
+
+Electronically signed by Dr. Linda Anderson, MD
+08/29/2009

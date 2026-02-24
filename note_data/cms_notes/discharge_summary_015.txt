@@ -1,0 +1,50 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0011CB1F...
+Admission Date: 04/21/2008
+Discharge Date: 04/26/2008
+Attending Physician: Dr. Richard Davis, MD
+NPI: 1117398893
+
+PATIENT DEMOGRAPHICS:
+70-year-old male
+
+ADMITTING DIAGNOSIS:
+Atrial fibrillation (ICD-9: 42731)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 42789 (ICD-9: 42789)
+  - Diagnosis code 2948 (ICD-9: 2948)
+  - Atrial fibrillation (ICD-9: 42731)
+  - Diagnosis code 71590 (ICD-9: 71590)
+  - Diabetes mellitus type II without complication (ICD-9: 25000)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Ckd
+  - Cancer
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 259
+
+Electronically signed by Dr. Richard Davis, MD
+04/26/2008

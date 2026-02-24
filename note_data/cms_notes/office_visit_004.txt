@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 08/17/2010
+Patient ID: 00013D2E...
+Provider: Dr. Joseph Johnson, MD
+NPI: 1112729228
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 8410
+
+HISTORY OF PRESENT ILLNESS:
+This is a 87-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 120/87 mmHg
+  HR: 83 bpm
+  Temp: 98.0F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 8410 (ICD-9: 8410)
+  - Diagnosis code 8472 (8472)
+  - Diagnosis code 8409 (8409)
+
+SERVICES PROVIDED:
+  - Procedure 97535 (97535)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Joseph Johnson, MD
+08/17/2010

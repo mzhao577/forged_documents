@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 10/29/2009
+Patient ID: 00016F74...
+Provider: Dr. Robert Williams, MD
+NPI: 7188395348
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 56081
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 110/91 mmHg
+  HR: 91 bpm
+  Temp: 98.6F
+  SpO2: 99% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 56081 (ICD-9: 56081)
+
+
+SERVICES PROVIDED:
+  - Initial hospital care, high complexity (99223)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Robert Williams, MD
+10/29/2009

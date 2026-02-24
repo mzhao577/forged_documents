@@ -1,0 +1,47 @@
+OFFICE VISIT NOTE
+
+Date of Service: 07/31/2009
+Patient ID: 00016F74...
+Provider: Dr. James Lee, MD
+NPI: 8723812670
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 2788
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 126/72 mmHg
+  HR: 81 bpm
+  Temp: 98.4F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 2788 (ICD-9: 2788)
+  - Diabetes mellitus type II without complication (25000)
+  - Diagnosis code 42769 (42769)
+  - Diagnosis code 2469 (2469)
+
+SERVICES PROVIDED:
+  - Lipid panel (80061)
+  - Procedure G0103 (G0103)
+  - Procedure 84439 (84439)
+
+PLAN:
+  - Continue current management
+  - Lab work ordered
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. James Lee, MD
+07/31/2009

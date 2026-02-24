@@ -1,0 +1,15 @@
+OFFICE VISIT NOTE
+
+Date of Service: 04/25/2026
+Patient ID: 00013D2E...
+Provider: Dr. Future Doctor, MD
+NPI: 1234567890
+
+CHIEF COMPLAINT: Routine follow-up
+
+ASSESSMENT:
+1. Hypertension (ICD-9: 4019)
+
+Labs drawn on 05/25/2026 - pending
+
+Signed: 04/25/2026

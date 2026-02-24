@@ -1,0 +1,52 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0011CB1F...
+Admission Date: 04/26/2008
+Discharge Date: 04/30/2008
+Attending Physician: Dr. Susan Johnson, MD
+NPI: 8156577394
+
+PATIENT DEMOGRAPHICS:
+70-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 5693 (ICD-9: 5693)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 5781 (ICD-9: 5781)
+  - Atrial fibrillation (ICD-9: 42731)
+  - Other and unspecified hyperlipidemia (ICD-9: 2724)
+  - Diagnosis code 2768 (ICD-9: 2768)
+  - Diagnosis code 00845 (ICD-9: 00845)
+
+PROCEDURES PERFORMED:
+  - Procedure code 4523
+  - Procedure code 29410
+  - Procedure code V1259
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Ckd
+  - Cancer
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 371
+
+Electronically signed by Dr. Susan Johnson, MD
+04/30/2008

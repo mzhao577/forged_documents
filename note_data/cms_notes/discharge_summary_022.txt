@@ -1,0 +1,45 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0016D218...
+Admission Date: 01/19/2009
+Discharge Date: 01/20/2009
+Attending Physician: Dr. Mary Miller, MD
+NPI: 5423119112
+
+PATIENT DEMOGRAPHICS:
+82-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 29570 (ICD-9: 29570)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 29590 (ICD-9: 29590)
+  - Diabetes mellitus type II without complication (ICD-9: 25000)
+  - Diagnosis code 5990 (ICD-9: 5990)
+  - Diagnosis code 7823 (ICD-9: 7823)
+  - Diagnosis code V1749 (ICD-9: V1749)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Copd
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 882
+
+Electronically signed by Dr. Mary Miller, MD
+01/20/2009

@@ -1,0 +1,18 @@
+
+GPTZero
+
+Binoucular
+
+pyrouge
+
+openai-detector 
+
+Fast-DetectGPT
+
+Hugging Face Transformers
+
+
+
+
+
+

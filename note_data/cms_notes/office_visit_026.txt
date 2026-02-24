@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 08/11/2009
+Patient ID: 00016F74...
+Provider: Dr. Linda Anderson, MD
+NPI: 1570930305
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 29625
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 121/69 mmHg
+  HR: 84 bpm
+  Temp: 98.8F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 29625 (ICD-9: 29625)
+  - Diagnosis code 3003 (3003)
+
+SERVICES PROVIDED:
+  - Procedure 90862 (90862)
+  - Procedure 84402 (84402)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Linda Anderson, MD
+08/11/2009

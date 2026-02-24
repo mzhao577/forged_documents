@@ -1,0 +1,44 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00016F74...
+Admission Date: 04/12/2009
+Discharge Date: 04/18/2009
+Attending Physician: Dr. Richard Rodriguez, MD
+NPI: 6476809087
+
+PATIENT DEMOGRAPHICS:
+66-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 7866 (ICD-9: 7866)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 1970 (ICD-9: 1970)
+  - Hypertension, unspecified (ICD-9: 4019)
+  - Diagnosis code 5853 (ICD-9: 5853)
+  - Diagnosis code 7843 (ICD-9: 7843)
+  - Diagnosis code 2768 (ICD-9: 2768)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - None documented
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 201
+
+Electronically signed by Dr. Richard Rodriguez, MD
+04/18/2009

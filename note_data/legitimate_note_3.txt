@@ -1,0 +1,43 @@
+EMERGENCY DEPARTMENT NOTE
+
+Date/Time: 01/29/2026 13:20
+Patient: [REDACTED]
+MRN: [REDACTED]
+Attending: Dr. Amanda Foster, MD
+NPI: 1629384756
+
+CHIEF COMPLAINT: Right ankle injury
+
+HISTORY:
+28 y/o male presents after twisting right ankle playing basketball
+approximately 2 hours ago. Reports immediate pain and swelling. Unable to
+bear weight. Denies numbness or tingling. No prior ankle injuries. AMPLE:
+No allergies, no medications, PMH unremarkable, last ate 4 hours ago,
+playing basketball when injured.
+
+PHYSICAL EXAM:
+Right ankle: Significant swelling and ecchymosis over lateral malleolus
+Tenderness to palpation over ATFL and lateral malleolus
+Unable to bear weight
+Neurovascularly intact distally
+Ottawa ankle rules: Positive
+
+IMAGING:
+X-ray right ankle 3 views: No acute fracture. Soft tissue swelling noted
+laterally.
+
+DIAGNOSIS:
+Right ankle sprain, Grade II (ICD-10: S93.401A)
+
+TREATMENT:
+- RICE protocol discussed
+- Air stirrup ankle brace applied
+- Ibuprofen 600mg PO q6h PRN pain x 7 days
+- Crutches provided with instruction
+- Weight bearing as tolerated
+- Ortho follow-up if not improving in 1 week
+
+DISPOSITION: Discharged home in stable condition
+
+Dr. Amanda Foster, MD
+01/29/2026 13:20

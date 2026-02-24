@@ -1,0 +1,45 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0013E139...
+Admission Date: 08/30/2010
+Discharge Date: 09/07/2010
+Attending Physician: Dr. Richard Martinez, MD
+NPI: 3771255921
+
+PATIENT DEMOGRAPHICS:
+56-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 8738 (ICD-9: 8738)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Congestive heart failure, unspecified (ICD-9: 4280)
+  - Diagnosis code 3051 (ICD-9: 3051)
+  - Diabetes mellitus type II without complication (ICD-9: 25000)
+  - Diagnosis code 5853 (ICD-9: 5853)
+  - Coronary atherosclerosis of native coronary artery (ICD-9: 41401)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Depression
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 238
+
+Electronically signed by Dr. Richard Martinez, MD
+09/07/2010

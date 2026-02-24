@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 01/05/2009
+Patient ID: 00016F74...
+Provider: Dr. Susan Brown, MD
+NPI: 6906204231
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 1628
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 122/93 mmHg
+  HR: 82 bpm
+  Temp: 98.4F
+  SpO2: 99% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 1628 (ICD-9: 1628)
+
+
+SERVICES PROVIDED:
+  - Procedure 85025 (85025)
+  - Procedure 88305 (88305)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Susan Brown, MD
+01/05/2009

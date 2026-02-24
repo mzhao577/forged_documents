@@ -1,0 +1,49 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00108066...
+Admission Date: 09/30/2009
+Discharge Date: 10/07/2009
+Attending Physician: Dr. Michael Brown, MD
+NPI: 1521516773
+
+PATIENT DEMOGRAPHICS:
+44-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 29590 (ICD-9: 29590)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 29623 (ICD-9: 29623)
+  - Diagnosis code 2875 (ICD-9: 2875)
+  - Diagnosis code 27651 (ICD-9: 27651)
+  - Backache, unspecified (ICD-9: 7245)
+  - Diagnosis code 60000 (ICD-9: 60000)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Depression
+  - Diabetes
+  - Ihd
+  - Osteoporosis
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 876
+
+Electronically signed by Dr. Michael Brown, MD
+10/07/2009

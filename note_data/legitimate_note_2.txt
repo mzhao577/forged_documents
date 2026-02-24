@@ -1,0 +1,39 @@
+PROGRESS NOTE
+Patient Name: [REDACTED]
+DOB: [REDACTED]
+Date: 01/30/2026
+Provider: James Chen, PA-C
+Supervising Physician: Dr. Robert Williams, MD
+NPI: 1982735462
+
+SUBJECTIVE:
+72 y/o female here for follow-up of CHF. Patient reports improved exercise
+tolerance since last visit. Can now walk to mailbox without stopping.
+Sleeping flat with 2 pillows. Denies PND or orthopnea. Weight stable per
+patient. Compliant with medications and low-sodium diet.
+
+OBJECTIVE:
+BP: 118/74  HR: 68  Weight: 156 lbs (down 3 lbs from last visit)
+JVP: Normal
+Heart: RRR, no murmurs, gallops
+Lungs: Clear to auscultation bilaterally
+Extremities: Trace pedal edema bilateral, improved from 1+ last visit
+
+LABS (from 02/17/2026):
+BNP: 245 (down from 580)
+BMP: Na 138, K 4.2, Cr 1.1, BUN 22
+
+ASSESSMENT:
+1. CHF with reduced EF (35%) - NYHA Class II, improving (ICD-10: I50.22)
+2. Hypertension - controlled (ICD-10: I10)
+
+PLAN:
+- Continue current regimen: Carvedilol 12.5mg BID, Lisinopril 20mg daily,
+  Furosemide 40mg daily
+- Continue sodium restriction <2g/day
+- Daily weights, call if gain >3 lbs
+- Follow up 4 weeks
+- Repeat echo in 3 months
+
+James Chen, PA-C
+Electronically signed 01/30/2026

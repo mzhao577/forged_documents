@@ -1,0 +1,44 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00016F74...
+Admission Date: 06/26/2010
+Discharge Date: 07/01/2010
+Attending Physician: Dr. Richard Miller, MD
+NPI: 6408400473
+
+PATIENT DEMOGRAPHICS:
+67-year-old male
+
+ADMITTING DIAGNOSIS:
+Acute kidney failure, unspecified (ICD-9: 5849)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 3569 (ICD-9: 3569)
+  - Hypertension, unspecified (ICD-9: 4019)
+  - Diagnosis code 3542 (ICD-9: 3542)
+  - Diagnosis code V8801 (ICD-9: V8801)
+  - Retention of urine, unspecified (ICD-9: 78820)
+
+PROCEDURES PERFORMED:
+  - Procedure code E8889
+
+CHRONIC CONDITIONS:
+  - None documented
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 983
+
+Electronically signed by Dr. Richard Miller, MD
+07/01/2010

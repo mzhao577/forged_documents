@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 05/16/2009
+Patient ID: 00016F74...
+Provider: Dr. Susan Smith, MD
+NPI: 1479196470
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code v568
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 131/88 mmHg
+  HR: 67 bpm
+  Temp: 98.7F
+  SpO2: 99% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code V568 (ICD-9: V568)
+  - Hypertension, unspecified (4019)
+  - Diabetes mellitus type II without complication (25000)
+
+SERVICES PROVIDED:
+  - Office visit, established patient, low complexity (99213)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Susan Smith, MD
+05/16/2009

@@ -1,0 +1,18 @@
+DISCHARGE SUMMARY
+
+Patient ID: SYNTH12345
+Admission Date: 01/15/2024
+Discharge Date: 01/18/2024
+Attending: Dr. Wrong Dose, MD
+
+DISCHARGE MEDICATIONS:
+1. Metformin 5000mg PO TID (DANGEROUS - max 2550mg/day)
+2. Lisinopril 200mg PO daily (DANGEROUS - max 80mg)
+3. Warfarin 50mg PO daily (DANGEROUS - typical 2-10mg)
+4. Metoprolol 500mg PO BID (DANGEROUS - max 400mg/day)
+
+DIAGNOSES:
+- Diabetes (ICD-9: 25000)
+- Hypertension (ICD-9: 4019)
+
+Dr. Wrong Dose, MD

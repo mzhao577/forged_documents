@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 03/08/2009
+Patient ID: 00016F74...
+Provider: Dr. Elizabeth Moore, MD
+NPI: 6473874056
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 7870
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 121/92 mmHg
+  HR: 74 bpm
+  Temp: 98.4F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 7870 (ICD-9: 7870)
+
+
+SERVICES PROVIDED:
+  - Procedure 99254 (99254)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Elizabeth Moore, MD
+03/08/2009

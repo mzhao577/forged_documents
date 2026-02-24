@@ -1,0 +1,22 @@
+OFFICE VISIT NOTE
+
+Date of Service: 03/25/2026
+Patient: [REDACTED]
+Provider: Dr. William Hayes, MD
+
+CHIEF COMPLAINT: Annual physical examination
+
+HISTORY:
+Patient last seen on 03/15/1952 for similar complaints. Labs drawn on
+04/09/2026 showed normal results.
+
+ASSESSMENT:
+1. Routine health maintenance
+2. Hypertension - stable
+
+PLAN:
+- Continue current medications
+- Follow up in 1 year
+
+Dr. William Hayes, MD
+Signed: 04/24/2026

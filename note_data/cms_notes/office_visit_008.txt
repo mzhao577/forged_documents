@@ -1,0 +1,47 @@
+OFFICE VISIT NOTE
+
+Date of Service: 10/09/2008
+Patient ID: 00016F74...
+Provider: Dr. David Miller, MD
+NPI: 9249792168
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 2514
+
+HISTORY OF PRESENT ILLNESS:
+This is a 65-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 140/77 mmHg
+  HR: 85 bpm
+  Temp: 98.7F
+  SpO2: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 2514 (ICD-9: 2514)
+  - Anxiety state, unspecified (30000)
+  - Diagnosis code 2449 (2449)
+  - Diagnosis code 2859 (2859)
+
+SERVICES PROVIDED:
+  - Procedure 96372 (96372)
+  - Procedure J1200 (J1200)
+  - Procedure 71020 (71020)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. David Miller, MD
+10/09/2008

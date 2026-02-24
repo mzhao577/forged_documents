@@ -1,0 +1,44 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0016D218...
+Admission Date: 04/20/2008
+Discharge Date: 04/23/2008
+Attending Physician: Dr. Patricia Brown, MD
+NPI: 5296648375
+
+PATIENT DEMOGRAPHICS:
+81-year-old female
+
+ADMITTING DIAGNOSIS:
+Syncope and collapse (ICD-9: 7802)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 42789 (ICD-9: 42789)
+  - Diagnosis code 41400 (ICD-9: 41400)
+  - Chronic airway obstruction, not elsewhere classified (ICD-9: 496)
+  - Diagnosis code 3970 (ICD-9: 3970)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Copd
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 285
+
+Electronically signed by Dr. Patricia Brown, MD
+04/23/2008

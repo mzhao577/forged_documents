@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 12/09/2008
+Patient ID: 00016F74...
+Provider: Dr. Jennifer Thomas, MD
+NPI: 3468068639
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 87362
+
+HISTORY OF PRESENT ILLNESS:
+This is a 65-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 126/68 mmHg
+  HR: 86 bpm
+  Temp: 97.9F
+  SpO2: 96% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 87362 (ICD-9: 87362)
+  - Diagnosis code 49390 (49390)
+
+SERVICES PROVIDED:
+  - Procedure 99284 (99284)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Jennifer Thomas, MD
+12/09/2008

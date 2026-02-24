@@ -1,0 +1,48 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00052705...
+Admission Date: 09/12/2008
+Discharge Date: 09/12/2008
+Attending Physician: Dr. Barbara Lee, MD
+NPI: 6132010904
+
+PATIENT DEMOGRAPHICS:
+74-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 78079 (ICD-9: 78079)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Pneumonia, organism unspecified (ICD-9: 486)
+  - Diagnosis code 3004 (ICD-9: 3004)
+  - Atrial fibrillation (ICD-9: 42731)
+  - Diagnosis code 42830 (ICD-9: 42830)
+  - Other and unspecified hyperlipidemia (ICD-9: 2724)
+
+PROCEDURES PERFORMED:
+  - No surgical procedures
+
+CHRONIC CONDITIONS:
+  - Chf
+  - Cancer
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 201
+
+Electronically signed by Dr. Barbara Lee, MD
+09/12/2008

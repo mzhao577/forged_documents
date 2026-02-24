@@ -1,0 +1,45 @@
+OFFICE VISIT NOTE
+
+Date of Service: 07/03/2009
+Patient ID: 00016F74...
+Provider: Dr. Patricia Moore, MD
+NPI: 0317272451
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 4271
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 111/72 mmHg
+  HR: 99 bpm
+  Temp: 97.7F
+  SpO2: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 4271 (ICD-9: 4271)
+  - Diagnosis code 4011 (4011)
+
+SERVICES PROVIDED:
+  - Office visit, established patient, moderate complexity (99214)
+  - Procedure 77280 (77280)
+  - Procedure G8447 (G8447)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Patricia Moore, MD
+07/03/2009

@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 12/06/2009
+Patient ID: 00016F74...
+Provider: Dr. Jennifer Jones, MD
+NPI: 4125549487
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code v8746
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 115/94 mmHg
+  HR: 86 bpm
+  Temp: 98.8F
+  SpO2: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code V8746 (ICD-9: V8746)
+  - Diagnosis code 7392 (7392)
+
+SERVICES PROVIDED:
+  - Office visit, established patient, low complexity (99213)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Jennifer Jones, MD
+12/06/2009

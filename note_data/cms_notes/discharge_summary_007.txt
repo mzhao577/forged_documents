@@ -1,0 +1,52 @@
+DISCHARGE SUMMARY
+
+Patient ID: 0007F12A...
+Admission Date: 09/19/2008
+Discharge Date: 09/22/2008
+Attending Physician: Dr. Michael Anderson, MD
+NPI: 8956735757
+
+PATIENT DEMOGRAPHICS:
+89-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 78097 (ICD-9: 78097)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 33811 (ICD-9: 33811)
+  - Diagnosis code 53550 (ICD-9: 53550)
+  - Diagnosis code 42820 (ICD-9: 42820)
+  - Chronic airway obstruction, not elsewhere classified (ICD-9: 496)
+  - Diagnosis code V1259 (ICD-9: V1259)
+
+PROCEDURES PERFORMED:
+  - Procedure code 8659
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Copd
+  - Depression
+  - Diabetes
+  - Ihd
+  - Osteoporosis
+  - Arthritis
+  - Stroke
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 951
+
+Electronically signed by Dr. Michael Anderson, MD
+09/22/2008

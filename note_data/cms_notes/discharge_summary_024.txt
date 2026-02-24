@@ -1,0 +1,48 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00196F07...
+Admission Date: 01/14/2010
+Discharge Date: 01/19/2010
+Attending Physician: Dr. Jennifer Johnson, MD
+NPI: 7087360414
+
+PATIENT DEMOGRAPHICS:
+52-year-old female
+
+ADMITTING DIAGNOSIS:
+Syncope and collapse (ICD-9: 7802)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Atrial fibrillation (ICD-9: 42731)
+  - Hypertension, unspecified (ICD-9: 4019)
+  - Other and unspecified hyperlipidemia (ICD-9: 2724)
+  - Diagnosis code 5856 (ICD-9: 5856)
+  - Diagnosis code 42832 (ICD-9: 42832)
+
+PROCEDURES PERFORMED:
+  - Procedure code 4516
+
+CHRONIC CONDITIONS:
+  - Alzheimers
+  - Chf
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 229
+
+Electronically signed by Dr. Jennifer Johnson, MD
+01/19/2010

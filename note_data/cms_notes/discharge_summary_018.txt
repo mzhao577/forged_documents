@@ -1,0 +1,50 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00139C34...
+Admission Date: 12/07/2009
+Discharge Date: 12/13/2009
+Attending Physician: Dr. Linda Jones, MD
+NPI: 9894972065
+
+PATIENT DEMOGRAPHICS:
+87-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 51881 (ICD-9: 51881)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 51881 (ICD-9: 51881)
+  - Diagnosis code 2859 (ICD-9: 2859)
+  - Diagnosis code 4659 (ICD-9: 4659)
+  - Aortic valve disorders (ICD-9: 4241)
+  - Diagnosis code 5184 (ICD-9: 5184)
+
+PROCEDURES PERFORMED:
+  - Procedure code 9671
+  - Procedure code 2724
+  - Procedure code 49121
+
+CHRONIC CONDITIONS:
+  - Ckd
+  - Copd
+  - Depression
+  - Diabetes
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 165
+
+Electronically signed by Dr. Linda Jones, MD
+12/13/2009

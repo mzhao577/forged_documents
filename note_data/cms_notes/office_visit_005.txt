@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 11/05/2010
+Patient ID: 00013D2E...
+Provider: Dr. John Miller, MD
+NPI: 3517371403
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 29521
+
+HISTORY OF PRESENT ILLNESS:
+This is a 87-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 121/91 mmHg
+  HR: 92 bpm
+  Temp: 98.9F
+  SpO2: 98% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 29521 (ICD-9: 29521)
+
+
+SERVICES PROVIDED:
+  - Procedure 85025 (85025)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. John Miller, MD
+11/05/2010

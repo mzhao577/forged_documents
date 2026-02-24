@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 12/02/2009
+Patient ID: 00016F74...
+Provider: Dr. Patricia Brown, MD
+NPI: 2052541087
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 1991
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 133/70 mmHg
+  HR: 75 bpm
+  Temp: 98.4F
+  SpO2: 98% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 1991 (ICD-9: 1991)
+  - Diagnosis code V5811 (V5811)
+
+SERVICES PROVIDED:
+  - Office visit, established patient, moderate complexity (99214)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Patricia Brown, MD
+12/02/2009

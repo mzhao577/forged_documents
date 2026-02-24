@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 01/17/2009
+Patient ID: 00016F74...
+Provider: Dr. Michael Thomas, MD
+NPI: 1473607212
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 2723
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 118/66 mmHg
+  HR: 76 bpm
+  Temp: 97.8F
+  SpO2: 99% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 2723 (ICD-9: 2723)
+  - Diagnosis code 41400 (41400)
+  - Diagnosis code V0481 (V0481)
+
+SERVICES PROVIDED:
+  - Office visit, established patient, low complexity (99213)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Michael Thomas, MD
+01/17/2009

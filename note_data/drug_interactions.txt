@@ -1,0 +1,22 @@
+DISCHARGE MEDICATION LIST
+
+Patient: [REDACTED]
+Discharge Date: 02/23/2026
+Attending: Dr. Robert Smith, MD
+
+ACTIVE MEDICATIONS AT DISCHARGE:
+
+1. Warfarin 5mg PO daily (for AFib)
+2. Aspirin 325mg PO daily
+3. Ibuprofen 800mg PO TID (for arthritis)
+4. Naproxen 500mg PO BID PRN
+5. Clopidogrel 75mg PO daily
+
+DIAGNOSES:
+- Atrial Fibrillation (I48.91)
+- Osteoarthritis (M19.90)
+- CAD s/p stent (Z95.5)
+
+Patient educated on medications. Follow up with PCP in 1 week.
+
+Dr. Robert Smith, MD

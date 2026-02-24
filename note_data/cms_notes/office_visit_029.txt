@@ -1,0 +1,45 @@
+OFFICE VISIT NOTE
+
+Date of Service: 10/05/2009
+Patient ID: 00016F74...
+Provider: Dr. Mary Johnson, MD
+NPI: 9786686491
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 7222
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 120/89 mmHg
+  HR: 87 bpm
+  Temp: 97.7F
+  SpO2: 100% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 7222 (ICD-9: 7222)
+  - Diagnosis code 71509 (71509)
+  - Diagnosis code 71941 (71941)
+  - Diagnosis code 72252 (72252)
+
+SERVICES PROVIDED:
+  - Procedure 72131 (72131)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Mary Johnson, MD
+10/05/2009

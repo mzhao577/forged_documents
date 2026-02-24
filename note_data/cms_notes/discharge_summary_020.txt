@@ -1,0 +1,46 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00157F15...
+Admission Date: 06/26/2009
+Discharge Date: 06/30/2009
+Attending Physician: Dr. Robert Moore, MD
+NPI: 7360289803
+
+PATIENT DEMOGRAPHICS:
+98-year-old female
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 82100 (ICD-9: 82100)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 82021 (ICD-9: 82021)
+  - Diagnosis code E8859 (ICD-9: E8859)
+  - Osteoporosis, unspecified (ICD-9: 73300)
+  - Hypertension, unspecified (ICD-9: 4019)
+  - Diagnosis code E8844 (ICD-9: E8844)
+
+PROCEDURES PERFORMED:
+  - Procedure code 7935
+
+CHRONIC CONDITIONS:
+  - Chf
+  - Depression
+  - Ihd
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 482
+
+Electronically signed by Dr. Robert Moore, MD
+06/30/2009

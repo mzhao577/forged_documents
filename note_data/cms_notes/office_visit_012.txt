@@ -1,0 +1,43 @@
+OFFICE VISIT NOTE
+
+Date of Service: 01/13/2009
+Patient ID: 00016F74...
+Provider: Dr. Mary Davis, MD
+NPI: 2960976210
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code v5867
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports stable symptoms.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 114/69 mmHg
+  HR: 69 bpm
+  Temp: 97.8F
+  SpO2: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+HEENT: Normocephalic, atraumatic
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code V5867 (ICD-9: V5867)
+
+
+SERVICES PROVIDED:
+  - Procedure 00120 (00120)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 3 months
+
+Electronically signed by Dr. Mary Davis, MD
+01/13/2009

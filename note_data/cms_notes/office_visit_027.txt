@@ -1,0 +1,45 @@
+OFFICE VISIT NOTE
+
+Date of Service: 08/24/2009
+Patient ID: 00016F74...
+Provider: Dr. Susan Davis, MD
+NPI: 9885794748
+
+CHIEF COMPLAINT:
+Follow-up for diagnosis code 72190
+
+HISTORY OF PRESENT ILLNESS:
+This is a 66-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Reports occasional missed doses.
+
+VITAL SIGNS:
+  BP: 113/78 mmHg
+  HR: 71 bpm
+  Temp: 98.8F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Diagnosis code 72190 (ICD-9: 72190)
+  - Diagnosis code 72402 (72402)
+  - Diagnosis code 72887 (72887)
+  - Diagnosis code 78939 (78939)
+
+SERVICES PROVIDED:
+  - Procedure 72148 (72148)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Susan Davis, MD
+08/24/2009

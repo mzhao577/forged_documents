@@ -1,0 +1,44 @@
+DISCHARGE SUMMARY
+
+Patient ID: 00016F74...
+Admission Date: 08/31/2009
+Discharge Date: 09/02/2009
+Attending Physician: Dr. John Garcia, MD
+NPI: 0611998537
+
+PATIENT DEMOGRAPHICS:
+66-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 6186 (ICD-9: 6186)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 6186 (ICD-9: 6186)
+  - Diagnosis code 2948 (ICD-9: 2948)
+  - Diagnosis code 56400 (ICD-9: 56400)
+
+PROCEDURES PERFORMED:
+  - Procedure code 7092
+  - Procedure code 6186
+  - Procedure code V5866
+
+CHRONIC CONDITIONS:
+  - None documented
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 750
+
+Electronically signed by Dr. John Garcia, MD
+09/02/2009

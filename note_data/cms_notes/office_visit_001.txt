@@ -1,0 +1,44 @@
+OFFICE VISIT NOTE
+
+Date of Service: 07/25/2009
+Patient ID: 00013D2E...
+Provider: Dr. Linda Thomas, MD
+NPI: 7128674558
+
+CHIEF COMPLAINT:
+Follow-up for backache, unspecified
+
+HISTORY OF PRESENT ILLNESS:
+This is a 86-year-old male presenting for evaluation and management.
+Patient reports multiple concerns.
+Compliant with current medication regimen.
+
+VITAL SIGNS:
+  BP: 150/93 mmHg
+  HR: 61 bpm
+  Temp: 97.5F
+  SpO2: 95% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert, no acute distress
+
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender
+Extremities: No edema
+
+ASSESSMENT:
+1. Backache, unspecified (ICD-9: 7245)
+  - Thoracic or lumbosacral neuritis, unspecified (7244)
+  - Diagnosis code 6272 (6272)
+
+SERVICES PROVIDED:
+  - Physical therapy evaluation (97001)
+
+PLAN:
+  - Continue current management
+  - Routine monitoring
+  - Follow-up in 4-6 weeks
+
+Electronically signed by Dr. Linda Thomas, MD
+07/25/2009

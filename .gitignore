@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Downloaded data (can be regenerated)
+note_data/cms_samples/
+
+# Model cache
+*.bin
+*.pt
+*.safetensors
+LLMDet
+unilm

@@ -1,0 +1,21 @@
+MEDICATION RECONCILIATION
+
+Patient: CMS Patient
+Date: 02/01/2024
+Provider: Dr. Interaction, MD
+
+CURRENT MEDICATIONS:
+1. Warfarin 5mg daily - for AFib
+2. Aspirin 325mg daily - cardiac protection
+3. Ibuprofen 800mg TID - for arthritis
+4. Naproxen 500mg BID PRN - for pain
+5. Clopidogrel 75mg daily - post-stent
+
+DIAGNOSES:
+- Atrial Fibrillation (ICD-9: 42731)
+- Coronary Artery Disease (ICD-9: 41401)
+- Osteoarthritis (ICD-9: 71536)
+
+WARNING: Multiple blood thinners + NSAIDs = HIGH BLEEDING RISK
+
+Dr. Interaction, MD

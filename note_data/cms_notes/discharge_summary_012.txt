@@ -1,0 +1,49 @@
+DISCHARGE SUMMARY
+
+Patient ID: 000C7486...
+Admission Date: 10/15/2008
+Discharge Date: 10/21/2008
+Attending Physician: Dr. Sarah Davis, MD
+NPI: 5520894646
+
+PATIENT DEMOGRAPHICS:
+76-year-old male
+
+ADMITTING DIAGNOSIS:
+Diagnosis code 4260 (ICD-9: 4260)
+
+HOSPITAL COURSE:
+Patient was admitted for evaluation and management of the above condition.
+Hospital course was complicated by multiple comorbidities.
+Patient received appropriate medical management and showed clinical improvement.
+
+DISCHARGE DIAGNOSES:
+  - Diagnosis code 42781 (ICD-9: 42781)
+  - Diagnosis code 41400 (ICD-9: 41400)
+  - Diagnosis code 4260 (ICD-9: 4260)
+  - Acute kidney failure, unspecified (ICD-9: 5849)
+  - Pure hypercholesterolemia (ICD-9: 2720)
+
+PROCEDURES PERFORMED:
+  - Procedure code 0050
+  - Procedure code 4280
+  - Procedure code 40390
+
+CHRONIC CONDITIONS:
+  - Ckd
+  - Diabetes
+  - Ihd
+  - Arthritis
+
+DISCHARGE MEDICATIONS:
+  - Continue home medications
+  - New prescriptions as indicated by diagnoses
+
+FOLLOW-UP:
+  - PCP follow-up in 1-2 weeks
+  - Specialty follow-up as needed
+
+DRG: 308
+
+Electronically signed by Dr. Sarah Davis, MD
+10/21/2008
