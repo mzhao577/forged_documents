@@ -4,11 +4,15 @@ Run forgery detection on all test files in note_data folder.
 Scans:
 - note_data/*.txt (generated test data)
 - note_data/cms_notes/*.txt (CMS-derived medical notes)
+
+Outputs results to a CSV file.
 """
 
 import os
+import csv
 import argparse
 from pathlib import Path
+from datetime import datetime
 from document_analyzer import MedicalDocumentAnalyzer
 from detect_ai_detectors import (
     HuggingFaceDetector, FastDetectGPTDetector, LLMDetDetector,
@@ -36,7 +40,7 @@ def classify_risk(score: float) -> str:
 
 
 def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool = False,
-                       detector: str = "huggingface"):
+                       detector: str = "huggingface", output_file: str = None):
     """Run detection on all test files.
 
     Args:
@@ -44,7 +48,12 @@ def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool
         limit: Maximum number of files to process (None = all)
         flawed_only: Only process files with 'flawed' in the name
         detector: Which AI detector to use - "huggingface", "llmdet", "fast-detectgpt", or "ensemble"
+        output_file: Path to output CSV file (default: detection_results_YYYYMMDD_HHMMSS.csv)
     """
+    # Set default output filename with timestamp
+    if output_file is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_file = f"detection_results_{timestamp}.csv"
 
     # Create the requested AI detector
     print("Initializing Medical Document Analyzer...")
@@ -145,9 +154,11 @@ def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool
         test_files = test_files[:limit]
 
     print(f"Found {len(test_files)} test files to process\n")
+    print(f"Results will be saved to: {output_file}\n")
 
     # Process each file
     results_summary = []
+    csv_rows = []
 
     for filepath in test_files:
         print("\n" + "=" * 70)
@@ -162,9 +173,43 @@ def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool
             report = analyzer.generate_report(results)
             print(report)
 
+            # Get all analyses
+            analyses = results.get("analyses", {})
+
             # Get AI detection info
-            ai_info = results.get("analyses", {}).get("ai_detection", {})
+            ai_info = analyses.get("ai_detection", {})
             ai_probability = ai_info.get("ai_probability", 0) if isinstance(ai_info, dict) else 0
+
+            # Get individual component scores and determine which contributed
+            contributing_components = []
+
+            # Check AI Detection
+            if ai_probability > 0.2:
+                contributing_components.append("AI_Detection")
+
+            # Check Consistency
+            consistency_info = analyses.get("consistency", {})
+            consistency_score = consistency_info.get("risk_score", 0) if isinstance(consistency_info, dict) else 0
+            if consistency_score > 0:
+                contributing_components.append("Consistency")
+
+            # Check Style
+            style_info = analyses.get("style", {})
+            style_score = style_info.get("risk_score", 0) if isinstance(style_info, dict) else 0
+            if style_score > 0:
+                contributing_components.append("Style")
+
+            # Check Medical Entities
+            medical_info = analyses.get("medical_entities", {})
+            medical_score = medical_info.get("risk_score", 0) if isinstance(medical_info, dict) else 0
+            if medical_score > 0:
+                contributing_components.append("Medical_Entities")
+
+            # Check Metadata
+            metadata_info = analyses.get("metadata", {})
+            metadata_score = metadata_info.get("risk_score", 0) if isinstance(metadata_info, dict) else 0
+            if metadata_score > 0:
+                contributing_components.append("Metadata")
 
             # Get warnings (filter out metadata warning for .txt files)
             # Warnings are stored under "all_warnings" in the results
@@ -179,6 +224,40 @@ def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool
             risk_score = results.get("overall_risk_score", 0)
             risk_level = classify_risk(risk_score)
 
+            # Classify as AIText or human_created based on probability
+            classification = "AIText" if ai_probability > 0.2 else "human_created"
+
+            # Build explanation
+            explanation_parts = []
+            if ai_probability > 0.2:
+                explanation_parts.append(f"High AI probability ({ai_probability:.1%})")
+            else:
+                explanation_parts.append(f"Low AI probability ({ai_probability:.1%})")
+            if significant_warnings:
+                explanation_parts.extend(significant_warnings[:3])  # Include top 3 warnings
+            explanation = "; ".join(explanation_parts) if explanation_parts else "No issues detected"
+
+            # Format contributing components
+            components_str = ", ".join(contributing_components) if contributing_components else "None"
+
+            # Determine if document failed any validation check (non-AI checks)
+            failed_validation = "Yes" if (consistency_score > 0 or style_score > 0 or
+                                          medical_score > 0 or metadata_score > 0) else "No"
+
+            # Determine if any abnormality was detected (AI-Classification is AIText OR Failed_Validation is Yes)
+            abnormal_detected = "Yes" if (classification == "AIText" or failed_validation == "Yes") else "No"
+
+            # Add row for CSV
+            csv_rows.append({
+                "file_name": filepath.name,
+                "Abnormal_detected": abnormal_detected,
+                "AI-Classification": classification,
+                "ai_probability": round(ai_probability, 4),
+                "Failed_Validation": failed_validation,
+                "explanation": explanation,
+                "contributing_components": components_str
+            })
+
             # Store summary with detailed info
             results_summary.append({
                 "file": filepath.name,
@@ -192,6 +271,15 @@ def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool
 
         except Exception as e:
             print(f"Error analyzing {filepath.name}: {e}")
+            csv_rows.append({
+                "file_name": filepath.name,
+                "Abnormal_detected": "Yes",
+                "AI-Classification": "ERROR",
+                "ai_probability": 0,
+                "Failed_Validation": "ERROR",
+                "explanation": f"Error during analysis: {str(e)}",
+                "contributing_components": "ERROR"
+            })
             results_summary.append({
                 "file": filepath.name,
                 "risk_score": None,
@@ -201,6 +289,15 @@ def run_all_detections(folder: str = "all", limit: int = None, flawed_only: bool
                 "all_warnings": [str(e)],
                 "issues_found": 1
             })
+
+    # Write results to CSV file
+    with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['file_name', 'Abnormal_detected', 'AI-Classification', 'ai_probability', 'Failed_Validation', 'explanation', 'contributing_components']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(csv_rows)
+
+    print(f"\n*** Results saved to: {output_file} ***")
 
     # Print final summary
     print("\n" + "=" * 70)
@@ -288,8 +385,10 @@ if __name__ == "__main__":
     parser.add_argument("--detector", choices=["huggingface", "llmdet", "fast-detectgpt", "binoculars", "ensemble"],
                         default="huggingface",
                         help="AI detector to use (default: huggingface). Note: binoculars requires ~28GB RAM")
+    parser.add_argument("--output", type=str, default=None,
+                        help="Output CSV file path (default: detection_results_YYYYMMDD_HHMMSS.csv)")
 
     args = parser.parse_args()
 
     run_all_detections(folder=args.folder, limit=args.limit, flawed_only=args.flawed_only,
-                       detector=args.detector)
+                       detector=args.detector, output_file=args.output)
