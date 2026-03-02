@@ -3,16 +3,24 @@
 # =============================================================================
 
 # -----------------------------------------------------------------------------
-# Core Dependencies (Required)
+# Core Dependencies (Required for run_detection.py)
 # -----------------------------------------------------------------------------
 requests>=2.28.0
 numpy>=1.21.0
 
 # -----------------------------------------------------------------------------
-# AI Detection - Deep Learning (Required for AI detection)
+# AI Detection - Deep Learning (Required for run_detection.py)
 # -----------------------------------------------------------------------------
 torch>=2.0.0
 transformers>=4.30.0
+
+# -----------------------------------------------------------------------------
+# Minimum Install for run_detection.py with HuggingFace detector (default):
+#   pip install requests numpy torch transformers
+#
+# This will enable:
+#   python run_detection.py --detector huggingface --output results.csv
+# -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
 # AI Detection - HuggingFace RoBERTa Detector
