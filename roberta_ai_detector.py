@@ -443,36 +443,42 @@ def save_results_csv(
         results: List of detection results
         output_path: Path to save CSV file
         use_multi: Whether multi-model detection was used
+
+    Output columns:
+        1. file_name: Name of the document
+        2. classification: "AI_text" or "human_created"
+        3. ai_probability: Probability score (0.0 to 1.0)
+        4. supporting_details: Explanation and model details
     """
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
 
         # Write header
         writer.writerow([
-            "document_name",
-            "is_ai_text",
+            "file_name",
+            "classification",
             "ai_probability",
-            "explanation"
+            "supporting_details"
         ])
 
         # Write data rows
         for result in results:
             if use_multi:
                 filename = result["filename"]
-                is_ai = "AI_TEXT" if result["aggregate"]["majority_ai"] else "HUMAN_TEXT"
+                classification = "AI_text" if result["aggregate"]["majority_ai"] else "human_created"
                 probability = result["aggregate"]["average_ai_probability"]
             else:
                 filename = result["filename"]
-                is_ai = "AI_TEXT" if result.get("is_ai_generated", False) else "HUMAN_TEXT"
+                classification = "AI_text" if result.get("is_ai_generated", False) else "human_created"
                 probability = result.get("ai_probability", 0.0)
 
-            explanation = generate_explanation(result, use_multi)
+            supporting_details = generate_explanation(result, use_multi)
 
             writer.writerow([
                 filename,
-                is_ai,
+                classification,
                 f"{probability:.4f}",
-                explanation
+                supporting_details
             ])
 
     print(f"CSV results saved to: {output_path}")
@@ -581,9 +587,10 @@ def run_detection(
 
         print(f"\nJSON results saved to: {output_file}")
 
-    # Save CSV results if specified
-    if csv_file:
-        save_results_csv(all_results, csv_file, use_multi)
+    # Save CSV results (always save, use default filename if not specified)
+    if csv_file is None:
+        csv_file = "ai_detection_results.csv"
+    save_results_csv(all_results, csv_file, use_multi)
 
     return all_results
 
@@ -626,7 +633,8 @@ def main():
 
     parser.add_argument(
         "--csv",
-        help="Path to save CSV results"
+        default="ai_detection_results.csv",
+        help="Path to save CSV results (default: ai_detection_results.csv)"
     )
 
     parser.add_argument(

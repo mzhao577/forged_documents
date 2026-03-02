@@ -11,7 +11,7 @@ from metadata_analyzer import MetadataAnalyzer
 from consistency_checker import ConsistencyChecker
 from medical_validator import MedicalEntityValidator
 from style_analyzer import StyleAnalyzer
-from ai_detectors import (
+from detect_ai_detectors import (
     BaseAIDetector,
     DetectorType,
     AIDetectorFactory,
@@ -101,7 +101,7 @@ class MedicalDocumentAnalyzer:
             analyzer = MedicalDocumentAnalyzer()
 
             # Use specific detector
-            from ai_detectors import HuggingFaceDetector
+            from detect_ai_detectors import HuggingFaceDetector
             analyzer = MedicalDocumentAnalyzer(
                 ai_detectors=[HuggingFaceDetector()],
                 auto_detect_apis=False

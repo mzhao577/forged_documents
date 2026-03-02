@@ -394,12 +394,21 @@ class HuggingFaceDetector(BaseAIDetector):
                 "text-classification",
                 model=self.model_name,
                 truncation=True,
-                max_length=512
+                max_length=512,
+                local_files_only=True  # Always use locally cached models, never download
             )
         except ImportError:
             self._load_error = "transformers not installed. Run: pip install transformers torch"
         except Exception as e:
-            self._load_error = f"Failed to load model: {str(e)}"
+            error_msg = str(e)
+            if "local_files_only" in error_msg or "not found" in error_msg.lower():
+                self._load_error = (
+                    f"Model '{self.model_name}' not found in local cache. "
+                    f"Download it first with: python -c \"from transformers import pipeline; "
+                    f"pipeline('text-classification', model='{self.model_name}')\""
+                )
+            else:
+                self._load_error = f"Failed to load model: {error_msg}"
 
     def detect(self, text: str) -> AIDetectionResult:
         error = self._validate_text(text)

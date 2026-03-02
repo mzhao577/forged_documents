@@ -10,7 +10,7 @@ import os
 import argparse
 from pathlib import Path
 from document_analyzer import MedicalDocumentAnalyzer
-from ai_detectors import (
+from detect_ai_detectors import (
     HuggingFaceDetector, FastDetectGPTDetector, LLMDetDetector,
     BinocularsDetector, EnsembleDetector
 )
