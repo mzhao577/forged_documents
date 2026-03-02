@@ -17,12 +17,16 @@ Supported detectors:
 
 import os
 import re
+import csv
 import math
+import argparse
 import requests
 from abc import ABC, abstractmethod
+from pathlib import Path
 from typing import Optional, List, Dict, Tuple
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
 from enum import Enum
+from datetime import datetime
 
 
 class DetectorType(Enum):
@@ -366,17 +370,25 @@ class HuggingFaceDetector(BaseAIDetector):
     Uses RoBERTa-based models for offline AI detection.
     """
 
-    def __init__(self, model_name: str = "roberta-base-openai-detector"):
+    # Default local model path (update this path for your system)
+    DEFAULT_MODEL_PATH = "~/.cache/huggingface/hub/models--roberta-base-openai-detector/snapshots/6cba99c003b711c7fe94f8a3aa2be35a792cb6fa/"
+
+    def __init__(self, model_name: str = None):
         """
         Initialize with a Hugging Face model.
 
         Args:
-            model_name: Model to use. Options:
-                - "roberta-base-openai-detector" (OpenAI's detector)
-                - "Hello-SimpleAI/chatgpt-detector-roberta" (ChatGPT specific)
-                - "openai-community/roberta-base-openai-detector"
+            model_name: Model path or name. If None, uses DEFAULT_MODEL_PATH.
+                Options:
+                - None (uses local DEFAULT_MODEL_PATH)
+                - Full local path to model directory
+                - "roberta-base-openai-detector" (HuggingFace hub name)
         """
-        self.model_name = model_name
+        if model_name is None:
+            # Use default local path, expand ~ to home directory
+            self.model_name = os.path.expanduser(self.DEFAULT_MODEL_PATH)
+        else:
+            self.model_name = os.path.expanduser(model_name)
         self._pipeline = None
         self._load_error = None
 
@@ -1254,3 +1266,307 @@ class AIDetectorFactory:
             "rouge_checker": "ROUGE Similarity - Pattern matching with ROUGE metrics",
             "ensemble": "Ensemble - Combine multiple detectors with voting"
         }
+
+
+# =============================================================================
+# File Processing and CSV Output
+# =============================================================================
+
+def load_notes_from_folder(folder_path: str) -> List[Dict]:
+    """
+    Load all text files from a folder.
+
+    Args:
+        folder_path: Path to the folder containing note files
+
+    Returns:
+        List of dictionaries with 'filename' and 'text' keys
+    """
+    notes = []
+    folder = Path(folder_path)
+
+    if not folder.exists():
+        print(f"Error: Folder '{folder_path}' does not exist")
+        return notes
+
+    # Get all text files
+    txt_files = sorted(folder.glob("*.txt"))
+
+    if not txt_files:
+        print(f"Warning: No .txt files found in '{folder_path}'")
+        return notes
+
+    print(f"Found {len(txt_files)} text files in '{folder_path}'")
+
+    for txt_file in txt_files:
+        try:
+            with open(txt_file, 'r', encoding='utf-8') as f:
+                text = f.read()
+            notes.append({
+                "filename": txt_file.name,
+                "text": text
+            })
+        except Exception as e:
+            print(f"Error reading {txt_file.name}: {e}")
+
+    return notes
+
+
+def generate_explanation(result: AIDetectionResult) -> str:
+    """
+    Generate a human-readable explanation for the classification.
+
+    Args:
+        result: AIDetectionResult from a detector
+
+    Returns:
+        Explanation string
+    """
+    explanations = []
+
+    if result.error:
+        return f"Error: {result.error}"
+
+    # Add detector name
+    explanations.append(f"Detector: {result.detector_name}")
+
+    # Add probability interpretation
+    ai_prob = result.ai_probability
+    if ai_prob > 0.8:
+        explanations.append("Strong AI-generated text patterns detected (>80%)")
+    elif ai_prob > 0.6:
+        explanations.append("Moderate AI-generated text indicators (60-80%)")
+    elif ai_prob > 0.4:
+        explanations.append("Borderline - mixed human/AI characteristics (40-60%)")
+    elif ai_prob > 0.2:
+        explanations.append("Mostly human-written with minor AI-like patterns (20-40%)")
+    else:
+        explanations.append("Strong human-written text characteristics (<20%)")
+
+    # Add confidence level
+    explanations.append(f"Confidence: {result.confidence:.1%}")
+
+    # Add details if available
+    if result.details:
+        if "raw_label" in result.details:
+            explanations.append(f"Raw output: {result.details['raw_label']}")
+        if "model" in result.details:
+            explanations.append(f"Model: {result.details['model']}")
+        if "most_likely_source" in result.details:
+            explanations.append(f"Likely source: {result.details['most_likely_source']}")
+
+    return " | ".join(explanations)
+
+
+def save_results_csv(
+    results: List[Dict],
+    output_path: str
+):
+    """
+    Save detection results to CSV file.
+
+    Args:
+        results: List of detection result dictionaries
+        output_path: Path to save CSV file
+
+    Output columns:
+        1. file_name: Name of the document
+        2. classification: "AI_text" or "human_created"
+        3. ai_probability: Probability score (0.0 to 1.0)
+        4. explanation: Detailed explanation of the classification
+    """
+    with open(output_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+
+        # Write header
+        writer.writerow([
+            "file_name",
+            "classification",
+            "ai_probability",
+            "explanation"
+        ])
+
+        # Write data rows
+        for r in results:
+            writer.writerow([
+                r["filename"],
+                r["classification"],
+                f"{r['ai_probability']:.4f}",
+                r["explanation"]
+            ])
+
+    print(f"CSV results saved to: {output_path}")
+
+
+def run_detection(
+    data_folder: str = "note_data/cms_notes",
+    detector_type: str = "huggingface_roberta",
+    csv_file: str = "ai_detection_results.csv",
+    model_name: Optional[str] = None
+):
+    """
+    Run AI detection on all notes in the specified folder.
+
+    Args:
+        data_folder: Path to folder containing note files
+        detector_type: Type of detector to use
+        csv_file: Path to save CSV results
+        model_name: Optional model name for HuggingFace detector
+    """
+    # Load notes
+    notes = load_notes_from_folder(data_folder)
+
+    if not notes:
+        print("No notes to process. Exiting.")
+        return
+
+    print(f"\nProcessing {len(notes)} notes...")
+    print("=" * 60)
+
+    # Create detector
+    try:
+        if detector_type == "huggingface_roberta" and model_name:
+            detector = HuggingFaceDetector(model_name=model_name)
+        else:
+            detector = AIDetectorFactory.create(DetectorType(detector_type))
+        print(f"Using detector: {detector.name}")
+    except Exception as e:
+        print(f"Failed to create detector: {e}")
+        return
+
+    print("=" * 60)
+
+    all_results = []
+
+    for i, note in enumerate(notes, 1):
+        filename = note["filename"]
+        text = note["text"]
+
+        print(f"\n[{i}/{len(notes)}] Processing: {filename}")
+
+        try:
+            result = detector.detect(text)
+
+            # Determine classification
+            classification = "AI_text" if result.is_ai_generated else "human_created"
+
+            # Generate explanation
+            explanation = generate_explanation(result)
+
+            # Store result
+            result_dict = {
+                "filename": filename,
+                "classification": classification,
+                "ai_probability": result.ai_probability,
+                "explanation": explanation,
+                "is_ai_generated": result.is_ai_generated,
+                "confidence": result.confidence,
+                "error": result.error
+            }
+            all_results.append(result_dict)
+
+            # Print summary
+            if result.error:
+                print(f"  Error: {result.error}")
+            else:
+                print(f"  AI Probability: {result.ai_probability:.2%}")
+                print(f"  Classification: {classification}")
+
+        except Exception as e:
+            print(f"  Error: {e}")
+            all_results.append({
+                "filename": filename,
+                "classification": "error",
+                "ai_probability": 0.0,
+                "explanation": f"Error: {str(e)}",
+                "is_ai_generated": False,
+                "confidence": 0.0,
+                "error": str(e)
+            })
+
+    # Print summary
+    print("\n" + "=" * 60)
+    print("SUMMARY")
+    print("=" * 60)
+
+    valid_results = [r for r in all_results if not r.get("error")]
+    ai_count = sum(1 for r in valid_results if r["is_ai_generated"])
+    total = len(valid_results)
+
+    if total > 0:
+        avg_prob = sum(r["ai_probability"] for r in valid_results) / total
+        print(f"Total notes processed: {len(notes)}")
+        print(f"Successful detections: {total}")
+        print(f"Detected as AI-generated: {ai_count} ({ai_count/total*100:.1f}%)")
+        print(f"Detected as Human-written: {total - ai_count} ({(total-ai_count)/total*100:.1f}%)")
+        print(f"Average AI probability: {avg_prob:.2%}")
+    else:
+        print(f"Total notes processed: {len(notes)}")
+        print("No successful detections")
+
+    # Save CSV results
+    save_results_csv(all_results, csv_file)
+
+    return all_results
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Detect AI-generated text using various detection algorithms"
+    )
+
+    parser.add_argument(
+        "--data-folder",
+        default="note_data/cms_notes",
+        help="Path to folder containing note text files (default: note_data/cms_notes)"
+    )
+
+    parser.add_argument(
+        "--detector",
+        choices=[
+            "huggingface_roberta", "openai_detector", "fast_detectgpt",
+            "binoculars", "llmdet", "rouge_checker"
+        ],
+        default="huggingface_roberta",
+        help="Detector type to use (default: huggingface_roberta)"
+    )
+
+    parser.add_argument(
+        "--model",
+        default=None,
+        help="Model name for HuggingFace detector (e.g., 'openai-community/roberta-base-openai-detector')"
+    )
+
+    parser.add_argument(
+        "--csv",
+        default="ai_detection_results.csv",
+        help="Path to save CSV results (default: ai_detection_results.csv)"
+    )
+
+    parser.add_argument(
+        "--list-detectors",
+        action="store_true",
+        help="List available detectors and exit"
+    )
+
+    args = parser.parse_args()
+
+    # List detectors if requested
+    if args.list_detectors:
+        print("Available AI detectors:")
+        print("-" * 60)
+        for key, desc in AIDetectorFactory.list_available().items():
+            print(f"  {key:20} - {desc}")
+        return
+
+    # Run detection
+    run_detection(
+        data_folder=args.data_folder,
+        detector_type=args.detector,
+        csv_file=args.csv,
+        model_name=args.model
+    )
+
+
+if __name__ == "__main__":
+    main()
