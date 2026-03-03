@@ -22,6 +22,7 @@ Thumbs.db
 note_data/cms_samples/
 
 # Model cache
+models/
 *.bin
 *.pt
 *.safetensors
