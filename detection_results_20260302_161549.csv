@@ -1,0 +1,77 @@
+file_name,Abnormal_detected,AI-Classification,ai_probability,Failed_Validation,explanation,contributing_components
+ai_generated_note_1.txt,Yes,human_created,0.0014,Yes,Low AI probability (0.1%); Potentially invalid drug: adequate; AI-associated phrase detected: 'Furthermore'; AI-associated phrase detected: 'Additionally',"Style, Medical_Entities"
+ai_generated_note_2.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); AI-associated phrase detected: 'Furthermore'; AI-associated phrase detected: 'Moreover'; AI-associated phrase detected: 'Additionally',Style
+dangerous_dosages.txt,Yes,AIText,0.7884,Yes,High AI probability (78.8%); Potentially dangerous dosage: metformin 5000.0mg (max single dose typically 1000mg); Potentially dangerous dosage: lisinopril 200.0mg (max single dose typically 80mg); Potentially invalid drug: oxycodone,"AI_Detection, Consistency, Style, Medical_Entities"
+date_inconsistencies.txt,Yes,human_created,0.0017,Yes,Low AI probability (0.2%); Future date detected: 03/25/2026; Future date detected: 04/09/2026; Future date detected: 04/24/2026,Consistency
+drug_interactions.txt,Yes,human_created,0.0148,Yes,"Low AI probability (1.5%); Potentially dangerous combination: {'warfarin'} with {'aspirin', 'naproxen', 'ibuprofen'} - Blood thinner with NSAID - bleeding risk; Unusually uniform sentence lengths (variance: 4.02) - human writing typically shows more variation","Style, Medical_Entities"
+invalid_codes.txt,Yes,human_created,0.0154,Yes,Low AI probability (1.5%); Invalid NPI number: 1234567890; Unusually uniform sentence lengths (variance: 7.14) - human writing typically shows more variation,"Style, Medical_Entities"
+legitimate_note_1.txt,Yes,human_created,0.0006,Yes,Low AI probability (0.1%); Potentially invalid drug: benzonatate,Medical_Entities
+legitimate_note_2.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 1982735462,Medical_Entities
+legitimate_note_3.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Potentially invalid drug: immediate; Invalid NPI number: 1629384756,Medical_Entities
+mixed_formatting.txt,Yes,human_created,0.0007,Yes,Low AI probability (0.1%); Potentially invalid drug: template; Potentially invalid drug: immediate,Medical_Entities
+terminology_errors.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Informal language detected: 'gonna' (unusual in medical documents),Consistency
+discharge_summary_001.txt,Yes,human_created,0.0206,Yes,Low AI probability (2.1%),Consistency
+discharge_summary_002.txt,Yes,human_created,0.0379,Yes,Low AI probability (3.8%),Consistency
+discharge_summary_003.txt,Yes,human_created,0.1792,Yes,Low AI probability (17.9%),Consistency
+discharge_summary_004.txt,Yes,AIText,0.4622,Yes,High AI probability (46.2%); Phrase repeated 6 times: 'diagnosis code icd',"AI_Detection, Consistency, Style"
+discharge_summary_005.txt,Yes,AIText,0.2722,Yes,High AI probability (27.2%),"AI_Detection, Consistency"
+discharge_summary_006.txt,Yes,human_created,0.0043,Yes,Low AI probability (0.4%),Consistency
+discharge_summary_007.txt,Yes,human_created,0.0554,Yes,Low AI probability (5.5%),Consistency
+discharge_summary_008.txt,Yes,AIText,0.2236,Yes,High AI probability (22.4%); High sentence length variance (504.12) - possible content from multiple sources,"AI_Detection, Consistency, Style"
+discharge_summary_009.txt,Yes,AIText,0.3101,Yes,High AI probability (31.0%); Invalid NPI number: 1907446990,"AI_Detection, Consistency, Medical_Entities"
+discharge_summary_010.txt,Yes,AIText,0.9506,Yes,High AI probability (95.1%),"AI_Detection, Consistency"
+discharge_summary_011.txt,Yes,human_created,0.0483,Yes,Low AI probability (4.8%),Consistency
+discharge_summary_012.txt,Yes,AIText,0.3814,Yes,High AI probability (38.1%),"AI_Detection, Consistency"
+discharge_summary_013.txt,Yes,human_created,0.1491,Yes,Low AI probability (14.9%); Invalid NPI number: 1521516773,"Consistency, Medical_Entities"
+discharge_summary_014.txt,Yes,AIText,0.908,Yes,High AI probability (90.8%),"AI_Detection, Consistency"
+discharge_summary_015.txt,Yes,human_created,0.0422,Yes,Low AI probability (4.2%); Invalid NPI number: 1117398893,"Consistency, Medical_Entities"
+discharge_summary_016.txt,Yes,AIText,0.5477,Yes,High AI probability (54.8%),"AI_Detection, Consistency"
+discharge_summary_017.txt,Yes,human_created,0.0268,Yes,Low AI probability (2.7%),Consistency
+discharge_summary_018.txt,Yes,AIText,0.9756,Yes,High AI probability (97.6%),"AI_Detection, Consistency"
+discharge_summary_019.txt,Yes,human_created,0.0212,Yes,Low AI probability (2.1%),Consistency
+discharge_summary_020.txt,Yes,human_created,0.1341,Yes,Low AI probability (13.4%),Consistency
+discharge_summary_021.txt,Yes,human_created,0.0016,Yes,Low AI probability (0.2%),Consistency
+discharge_summary_022.txt,Yes,human_created,0.0787,Yes,Low AI probability (7.9%),Consistency
+discharge_summary_023.txt,Yes,human_created,0.0215,Yes,Low AI probability (2.2%); Potentially invalid drug: intermediate,"Consistency, Medical_Entities"
+discharge_summary_024.txt,Yes,human_created,0.033,Yes,Low AI probability (3.3%),Consistency
+discharge_summary_025.txt,Yes,AIText,0.2876,Yes,High AI probability (28.8%); Phrase repeated 6 times: 'diagnosis code icd',"AI_Detection, Consistency, Style"
+flawed_ai_generated_style.txt,Yes,human_created,0.0025,Yes,Low AI probability (0.3%); AI-associated phrase detected: 'Furthermore'; AI-associated phrase detected: 'Moreover'; AI-associated phrase detected: 'Additionally',Style
+flawed_dangerous_doses.txt,Yes,AIText,0.4491,Yes,High AI probability (44.9%); Potentially dangerous dosage: metformin 5000.0mg (max single dose typically 1000mg); Potentially dangerous dosage: lisinopril 200.0mg (max single dose typically 80mg); Unusually uniform sentence lengths (variance: 8.82) - human writing typically shows more variation,"AI_Detection, Consistency, Style"
+flawed_drug_interactions.txt,Yes,human_created,0.0335,Yes,"Low AI probability (3.4%); Potentially dangerous combination: {'warfarin'} with {'aspirin', 'naproxen', 'ibuprofen'} - Blood thinner with NSAID - bleeding risk",Medical_Entities
+flawed_future_dates.txt,Yes,human_created,0.0251,Yes,Low AI probability (2.5%); Future date detected: 04/25/2026; Future date detected: 05/25/2026; Future date detected: 04/25/2026,"Consistency, Medical_Entities"
+flawed_invalid_codes.txt,No,human_created,0.1808,No,Low AI probability (18.1%),None
+office_visit_001.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_002.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_003.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 2657039888,Medical_Entities
+office_visit_004.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 1112729228,Medical_Entities
+office_visit_005.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_006.txt,Yes,human_created,0.0003,Yes,Low AI probability (0.0%),Consistency
+office_visit_007.txt,Yes,human_created,0.0008,Yes,Low AI probability (0.1%),Consistency
+office_visit_008.txt,Yes,human_created,0.0003,Yes,Low AI probability (0.0%),Consistency
+office_visit_009.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_010.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_011.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_012.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 2960976210,Medical_Entities
+office_visit_013.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 1473607212,Medical_Entities
+office_visit_014.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_015.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_016.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_017.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_018.txt,Yes,human_created,0.0003,Yes,Low AI probability (0.0%),Consistency
+office_visit_019.txt,Yes,human_created,0.0003,Yes,Low AI probability (0.0%); Invalid NPI number: 1465101033,"Consistency, Medical_Entities"
+office_visit_020.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 1479196470,Medical_Entities
+office_visit_021.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_022.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_023.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%),Consistency
+office_visit_024.txt,Yes,human_created,0.0007,Yes,Low AI probability (0.1%),Consistency
+office_visit_025.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%),Consistency
+office_visit_026.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 1570930305,Medical_Entities
+office_visit_027.txt,Yes,human_created,0.0003,Yes,Low AI probability (0.0%),Consistency
+office_visit_028.txt,No,human_created,0.0004,No,Low AI probability (0.0%),None
+office_visit_029.txt,Yes,human_created,0.0004,Yes,Low AI probability (0.0%),Consistency
+office_visit_030.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_031.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_032.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); Invalid NPI number: 2052541087,Medical_Entities
+office_visit_033.txt,No,human_created,0.0002,No,Low AI probability (0.0%),None
+office_visit_034.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%),Consistency
+office_visit_035.txt,Yes,human_created,0.0004,Yes,Low AI probability (0.0%),Consistency

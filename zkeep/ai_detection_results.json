@@ -1,0 +1,3067 @@
+{
+  "timestamp": "2026-03-02T11:02:52.743256",
+  "data_folder": "note_data/cms_notes",
+  "total_notes": 65,
+  "summary": {
+    "ai_generated_count": 4,
+    "human_written_count": 61,
+    "average_ai_probability": 0.0734
+  },
+  "results": [
+    {
+      "filename": "discharge_summary_001.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_001.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0206,
+          "human_probability": 0.9794,
+          "confidence": 0.9588,
+          "raw_label": "Real",
+          "raw_score": 0.9794,
+          "text_length": 1090,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_001.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1090,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_001.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0206,
+          "human_probability": 0.9794,
+          "confidence": 0.9588,
+          "raw_label": "Real",
+          "raw_score": 0.9794,
+          "text_length": 1090,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0138,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_002.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_002.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0379,
+          "human_probability": 0.9621,
+          "confidence": 0.9242,
+          "raw_label": "Real",
+          "raw_score": 0.9621,
+          "text_length": 1050,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_002.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1050,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_002.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0379,
+          "human_probability": 0.9621,
+          "confidence": 0.9242,
+          "raw_label": "Real",
+          "raw_score": 0.9621,
+          "text_length": 1050,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0254,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_003.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_003.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.1792,
+          "human_probability": 0.8208,
+          "confidence": 0.6416,
+          "raw_label": "Real",
+          "raw_score": 0.8208,
+          "text_length": 1004,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_003.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9993,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1004,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_003.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.1792,
+          "human_probability": 0.8208,
+          "confidence": 0.6416,
+          "raw_label": "Real",
+          "raw_score": 0.8208,
+          "text_length": 1004,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.1196,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_004.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_004.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.4622,
+          "human_probability": 0.5378,
+          "confidence": 0.0756,
+          "raw_label": "Real",
+          "raw_score": 0.5378,
+          "text_length": 1044,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_004.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1044,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_004.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.4622,
+          "human_probability": 0.5378,
+          "confidence": 0.0756,
+          "raw_label": "Real",
+          "raw_score": 0.5378,
+          "text_length": 1044,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.3082,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_005.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_005.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.2722,
+          "human_probability": 0.7278,
+          "confidence": 0.4557,
+          "raw_label": "Real",
+          "raw_score": 0.7278,
+          "text_length": 1071,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_005.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1071,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_005.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.2722,
+          "human_probability": 0.7278,
+          "confidence": 0.4557,
+          "raw_label": "Real",
+          "raw_score": 0.7278,
+          "text_length": 1071,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.1816,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_006.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_006.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0043,
+          "human_probability": 0.9957,
+          "confidence": 0.9914,
+          "raw_label": "Real",
+          "raw_score": 0.9957,
+          "text_length": 1100,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_006.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1100,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_006.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0043,
+          "human_probability": 0.9957,
+          "confidence": 0.9914,
+          "raw_label": "Real",
+          "raw_score": 0.9957,
+          "text_length": 1100,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.003,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_007.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_007.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0554,
+          "human_probability": 0.9446,
+          "confidence": 0.8892,
+          "raw_label": "Real",
+          "raw_score": 0.9446,
+          "text_length": 1173,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_007.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1173,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_007.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0554,
+          "human_probability": 0.9446,
+          "confidence": 0.8892,
+          "raw_label": "Real",
+          "raw_score": 0.9446,
+          "text_length": 1173,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.037,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_008.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_008.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.2236,
+          "human_probability": 0.7764,
+          "confidence": 0.5528,
+          "raw_label": "Real",
+          "raw_score": 0.7764,
+          "text_length": 1211,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_008.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1211,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_008.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.2236,
+          "human_probability": 0.7764,
+          "confidence": 0.5528,
+          "raw_label": "Real",
+          "raw_score": 0.7764,
+          "text_length": 1211,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.1492,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_009.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_009.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.3101,
+          "human_probability": 0.6899,
+          "confidence": 0.3799,
+          "raw_label": "Real",
+          "raw_score": 0.6899,
+          "text_length": 1162,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_009.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1162,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_009.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.3101,
+          "human_probability": 0.6899,
+          "confidence": 0.3799,
+          "raw_label": "Real",
+          "raw_score": 0.6899,
+          "text_length": 1162,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.2068,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_010.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_010.txt",
+          "model_name": "openai",
+          "is_ai_generated": true,
+          "ai_probability": 0.9506,
+          "human_probability": 0.0494,
+          "confidence": 0.9012,
+          "raw_label": "Fake",
+          "raw_score": 0.9506,
+          "text_length": 1173,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_010.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1173,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_010.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": true,
+          "ai_probability": 0.9506,
+          "human_probability": 0.0494,
+          "confidence": 0.9012,
+          "raw_label": "Fake",
+          "raw_score": 0.9506,
+          "text_length": 1173,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.6338,
+        "consensus_ai_count": 2,
+        "total_models": 3,
+        "majority_ai": true
+      }
+    },
+    {
+      "filename": "discharge_summary_011.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_011.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0483,
+          "human_probability": 0.9517,
+          "confidence": 0.9034,
+          "raw_label": "Real",
+          "raw_score": 0.9517,
+          "text_length": 1084,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_011.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1084,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_011.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0483,
+          "human_probability": 0.9517,
+          "confidence": 0.9034,
+          "raw_label": "Real",
+          "raw_score": 0.9517,
+          "text_length": 1084,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0323,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_012.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_012.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.3814,
+          "human_probability": 0.6186,
+          "confidence": 0.2372,
+          "raw_label": "Real",
+          "raw_score": 0.6186,
+          "text_length": 1125,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_012.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1125,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_012.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.3814,
+          "human_probability": 0.6186,
+          "confidence": 0.2372,
+          "raw_label": "Real",
+          "raw_score": 0.6186,
+          "text_length": 1125,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.2544,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_013.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_013.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.1491,
+          "human_probability": 0.8509,
+          "confidence": 0.7019,
+          "raw_label": "Real",
+          "raw_score": 0.8509,
+          "text_length": 1102,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_013.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1102,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_013.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.1491,
+          "human_probability": 0.8509,
+          "confidence": 0.7019,
+          "raw_label": "Real",
+          "raw_score": 0.8509,
+          "text_length": 1102,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0995,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_014.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_014.txt",
+          "model_name": "openai",
+          "is_ai_generated": true,
+          "ai_probability": 0.908,
+          "human_probability": 0.092,
+          "confidence": 0.8159,
+          "raw_label": "Fake",
+          "raw_score": 0.908,
+          "text_length": 1112,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_014.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1112,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_014.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": true,
+          "ai_probability": 0.908,
+          "human_probability": 0.092,
+          "confidence": 0.8159,
+          "raw_label": "Fake",
+          "raw_score": 0.908,
+          "text_length": 1112,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.6054,
+        "consensus_ai_count": 2,
+        "total_models": 3,
+        "majority_ai": true
+      }
+    },
+    {
+      "filename": "discharge_summary_015.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_015.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0422,
+          "human_probability": 0.9578,
+          "confidence": 0.9156,
+          "raw_label": "Real",
+          "raw_score": 0.9578,
+          "text_length": 1128,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_015.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1128,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_015.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0422,
+          "human_probability": 0.9578,
+          "confidence": 0.9156,
+          "raw_label": "Real",
+          "raw_score": 0.9578,
+          "text_length": 1128,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0282,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_016.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_016.txt",
+          "model_name": "openai",
+          "is_ai_generated": true,
+          "ai_probability": 0.5477,
+          "human_probability": 0.4523,
+          "confidence": 0.0954,
+          "raw_label": "Fake",
+          "raw_score": 0.5477,
+          "text_length": 1161,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_016.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1161,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_016.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": true,
+          "ai_probability": 0.5477,
+          "human_probability": 0.4523,
+          "confidence": 0.0954,
+          "raw_label": "Fake",
+          "raw_score": 0.5477,
+          "text_length": 1161,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.3652,
+        "consensus_ai_count": 2,
+        "total_models": 3,
+        "majority_ai": true
+      }
+    },
+    {
+      "filename": "discharge_summary_017.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_017.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0268,
+          "human_probability": 0.9732,
+          "confidence": 0.9464,
+          "raw_label": "Real",
+          "raw_score": 0.9732,
+          "text_length": 1164,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_017.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1164,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_017.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0268,
+          "human_probability": 0.9732,
+          "confidence": 0.9464,
+          "raw_label": "Real",
+          "raw_score": 0.9732,
+          "text_length": 1164,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.018,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_018.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_018.txt",
+          "model_name": "openai",
+          "is_ai_generated": true,
+          "ai_probability": 0.9756,
+          "human_probability": 0.0244,
+          "confidence": 0.9511,
+          "raw_label": "Fake",
+          "raw_score": 0.9756,
+          "text_length": 1120,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_018.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1120,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_018.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": true,
+          "ai_probability": 0.9756,
+          "human_probability": 0.0244,
+          "confidence": 0.9511,
+          "raw_label": "Fake",
+          "raw_score": 0.9756,
+          "text_length": 1120,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.6505,
+        "consensus_ai_count": 2,
+        "total_models": 3,
+        "majority_ai": true
+      }
+    },
+    {
+      "filename": "discharge_summary_019.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_019.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0212,
+          "human_probability": 0.9788,
+          "confidence": 0.9576,
+          "raw_label": "Real",
+          "raw_score": 0.9788,
+          "text_length": 1125,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_019.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1125,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_019.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0212,
+          "human_probability": 0.9788,
+          "confidence": 0.9576,
+          "raw_label": "Real",
+          "raw_score": 0.9788,
+          "text_length": 1125,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0142,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_020.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_020.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.1341,
+          "human_probability": 0.8659,
+          "confidence": 0.7318,
+          "raw_label": "Real",
+          "raw_score": 0.8659,
+          "text_length": 1065,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_020.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1065,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_020.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.1341,
+          "human_probability": 0.8659,
+          "confidence": 0.7318,
+          "raw_label": "Real",
+          "raw_score": 0.8659,
+          "text_length": 1065,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0895,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_021.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_021.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0016,
+          "human_probability": 0.9984,
+          "confidence": 0.9967,
+          "raw_label": "Real",
+          "raw_score": 0.9984,
+          "text_length": 1036,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_021.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1036,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_021.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0016,
+          "human_probability": 0.9984,
+          "confidence": 0.9967,
+          "raw_label": "Real",
+          "raw_score": 0.9984,
+          "text_length": 1036,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0012,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_022.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_022.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0787,
+          "human_probability": 0.9213,
+          "confidence": 0.8426,
+          "raw_label": "Real",
+          "raw_score": 0.9213,
+          "text_length": 1065,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_022.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1065,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_022.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0787,
+          "human_probability": 0.9213,
+          "confidence": 0.8426,
+          "raw_label": "Real",
+          "raw_score": 0.9213,
+          "text_length": 1065,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0526,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_023.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_023.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0215,
+          "human_probability": 0.9785,
+          "confidence": 0.9569,
+          "raw_label": "Real",
+          "raw_score": 0.9785,
+          "text_length": 1143,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_023.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1143,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_023.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0215,
+          "human_probability": 0.9785,
+          "confidence": 0.9569,
+          "raw_label": "Real",
+          "raw_score": 0.9785,
+          "text_length": 1143,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0144,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_024.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_024.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.033,
+          "human_probability": 0.967,
+          "confidence": 0.9339,
+          "raw_label": "Real",
+          "raw_score": 0.967,
+          "text_length": 1107,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_024.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9995,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1107,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_024.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.033,
+          "human_probability": 0.967,
+          "confidence": 0.9339,
+          "raw_label": "Real",
+          "raw_score": 0.967,
+          "text_length": 1107,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0221,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "discharge_summary_025.txt",
+      "individual_results": [
+        {
+          "filename": "discharge_summary_025.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.2876,
+          "human_probability": 0.7124,
+          "confidence": 0.4248,
+          "raw_label": "Real",
+          "raw_score": 0.7124,
+          "text_length": 1081,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_025.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1081,
+          "error": null
+        },
+        {
+          "filename": "discharge_summary_025.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.2876,
+          "human_probability": 0.7124,
+          "confidence": 0.4248,
+          "raw_label": "Real",
+          "raw_score": 0.7124,
+          "text_length": 1081,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.1918,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "flawed_ai_generated_style.txt",
+      "individual_results": [
+        {
+          "filename": "flawed_ai_generated_style.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0025,
+          "human_probability": 0.9975,
+          "confidence": 0.995,
+          "raw_label": "Real",
+          "raw_score": 0.9975,
+          "text_length": 1104,
+          "error": null
+        },
+        {
+          "filename": "flawed_ai_generated_style.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.4313,
+          "human_probability": 0.5687,
+          "confidence": 0.1375,
+          "raw_label": "Human",
+          "raw_score": 0.5687,
+          "text_length": 1104,
+          "error": null
+        },
+        {
+          "filename": "flawed_ai_generated_style.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0025,
+          "human_probability": 0.9975,
+          "confidence": 0.995,
+          "raw_label": "Real",
+          "raw_score": 0.9975,
+          "text_length": 1104,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.1454,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "flawed_dangerous_doses.txt",
+      "individual_results": [
+        {
+          "filename": "flawed_dangerous_doses.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.4491,
+          "human_probability": 0.5509,
+          "confidence": 0.1017,
+          "raw_label": "Real",
+          "raw_score": 0.5509,
+          "text_length": 455,
+          "error": null
+        },
+        {
+          "filename": "flawed_dangerous_doses.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0853,
+          "human_probability": 0.9147,
+          "confidence": 0.8295,
+          "raw_label": "Human",
+          "raw_score": 0.9147,
+          "text_length": 455,
+          "error": null
+        },
+        {
+          "filename": "flawed_dangerous_doses.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.4491,
+          "human_probability": 0.5509,
+          "confidence": 0.1017,
+          "raw_label": "Real",
+          "raw_score": 0.5509,
+          "text_length": 455,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.3278,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "flawed_drug_interactions.txt",
+      "individual_results": [
+        {
+          "filename": "flawed_drug_interactions.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0335,
+          "human_probability": 0.9665,
+          "confidence": 0.9329,
+          "raw_label": "Real",
+          "raw_score": 0.9665,
+          "text_length": 516,
+          "error": null
+        },
+        {
+          "filename": "flawed_drug_interactions.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0056,
+          "human_probability": 0.9944,
+          "confidence": 0.9888,
+          "raw_label": "Human",
+          "raw_score": 0.9944,
+          "text_length": 516,
+          "error": null
+        },
+        {
+          "filename": "flawed_drug_interactions.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0335,
+          "human_probability": 0.9665,
+          "confidence": 0.9329,
+          "raw_label": "Real",
+          "raw_score": 0.9665,
+          "text_length": 516,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0242,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "flawed_future_dates.txt",
+      "individual_results": [
+        {
+          "filename": "flawed_future_dates.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0251,
+          "human_probability": 0.9749,
+          "confidence": 0.9498,
+          "raw_label": "Real",
+          "raw_score": 0.9749,
+          "text_length": 254,
+          "error": null
+        },
+        {
+          "filename": "flawed_future_dates.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9993,
+          "raw_label": "Human",
+          "raw_score": 0.9996,
+          "text_length": 254,
+          "error": null
+        },
+        {
+          "filename": "flawed_future_dates.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0251,
+          "human_probability": 0.9749,
+          "confidence": 0.9498,
+          "raw_label": "Real",
+          "raw_score": 0.9749,
+          "text_length": 254,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0169,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "flawed_invalid_codes.txt",
+      "individual_results": [
+        {
+          "filename": "flawed_invalid_codes.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.1808,
+          "human_probability": 0.8192,
+          "confidence": 0.6383,
+          "raw_label": "Real",
+          "raw_score": 0.8192,
+          "text_length": 340,
+          "error": null
+        },
+        {
+          "filename": "flawed_invalid_codes.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0226,
+          "human_probability": 0.9774,
+          "confidence": 0.9548,
+          "raw_label": "Human",
+          "raw_score": 0.9774,
+          "text_length": 340,
+          "error": null
+        },
+        {
+          "filename": "flawed_invalid_codes.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.1808,
+          "human_probability": 0.8192,
+          "confidence": 0.6383,
+          "raw_label": "Real",
+          "raw_score": 0.8192,
+          "text_length": 340,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.1281,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_001.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_001.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 977,
+          "error": null
+        },
+        {
+          "filename": "office_visit_001.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 977,
+          "error": null
+        },
+        {
+          "filename": "office_visit_001.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 977,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_002.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_002.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 941,
+          "error": null
+        },
+        {
+          "filename": "office_visit_002.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 941,
+          "error": null
+        },
+        {
+          "filename": "office_visit_002.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 941,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_003.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_003.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 905,
+          "error": null
+        },
+        {
+          "filename": "office_visit_003.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 905,
+          "error": null
+        },
+        {
+          "filename": "office_visit_003.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 905,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_004.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_004.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 939,
+          "error": null
+        },
+        {
+          "filename": "office_visit_004.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 939,
+          "error": null
+        },
+        {
+          "filename": "office_visit_004.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 939,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_005.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_005.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 894,
+          "error": null
+        },
+        {
+          "filename": "office_visit_005.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 894,
+          "error": null
+        },
+        {
+          "filename": "office_visit_005.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 894,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_006.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_006.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 972,
+          "error": null
+        },
+        {
+          "filename": "office_visit_006.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 972,
+          "error": null
+        },
+        {
+          "filename": "office_visit_006.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 972,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0003,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_007.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_007.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0008,
+          "human_probability": 0.9992,
+          "confidence": 0.9983,
+          "raw_label": "Real",
+          "raw_score": 0.9992,
+          "text_length": 1067,
+          "error": null
+        },
+        {
+          "filename": "office_visit_007.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9993,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1067,
+          "error": null
+        },
+        {
+          "filename": "office_visit_007.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0008,
+          "human_probability": 0.9992,
+          "confidence": 0.9983,
+          "raw_label": "Real",
+          "raw_score": 0.9992,
+          "text_length": 1067,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0006,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_008.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_008.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 1020,
+          "error": null
+        },
+        {
+          "filename": "office_visit_008.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1020,
+          "error": null
+        },
+        {
+          "filename": "office_visit_008.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 1020,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0003,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_009.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_009.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 912,
+          "error": null
+        },
+        {
+          "filename": "office_visit_009.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 912,
+          "error": null
+        },
+        {
+          "filename": "office_visit_009.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 912,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_010.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_010.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 912,
+          "error": null
+        },
+        {
+          "filename": "office_visit_010.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 912,
+          "error": null
+        },
+        {
+          "filename": "office_visit_010.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 912,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_011.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_011.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 897,
+          "error": null
+        },
+        {
+          "filename": "office_visit_011.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 897,
+          "error": null
+        },
+        {
+          "filename": "office_visit_011.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 897,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_012.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_012.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 902,
+          "error": null
+        },
+        {
+          "filename": "office_visit_012.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 902,
+          "error": null
+        },
+        {
+          "filename": "office_visit_012.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 902,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_013.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_013.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 977,
+          "error": null
+        },
+        {
+          "filename": "office_visit_013.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 977,
+          "error": null
+        },
+        {
+          "filename": "office_visit_013.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 977,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_014.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_014.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 909,
+          "error": null
+        },
+        {
+          "filename": "office_visit_014.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 909,
+          "error": null
+        },
+        {
+          "filename": "office_visit_014.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 909,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_015.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_015.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1004,
+          "error": null
+        },
+        {
+          "filename": "office_visit_015.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1004,
+          "error": null
+        },
+        {
+          "filename": "office_visit_015.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1004,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_016.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_016.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 970,
+          "error": null
+        },
+        {
+          "filename": "office_visit_016.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 970,
+          "error": null
+        },
+        {
+          "filename": "office_visit_016.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 970,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_017.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_017.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 985,
+          "error": null
+        },
+        {
+          "filename": "office_visit_017.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 985,
+          "error": null
+        },
+        {
+          "filename": "office_visit_017.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 985,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_018.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_018.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 1031,
+          "error": null
+        },
+        {
+          "filename": "office_visit_018.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1031,
+          "error": null
+        },
+        {
+          "filename": "office_visit_018.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 1031,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0003,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_019.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_019.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 1016,
+          "error": null
+        },
+        {
+          "filename": "office_visit_019.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1016,
+          "error": null
+        },
+        {
+          "filename": "office_visit_019.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 1016,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0003,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_020.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_020.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1001,
+          "error": null
+        },
+        {
+          "filename": "office_visit_020.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1001,
+          "error": null
+        },
+        {
+          "filename": "office_visit_020.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1001,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_021.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_021.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 977,
+          "error": null
+        },
+        {
+          "filename": "office_visit_021.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 977,
+          "error": null
+        },
+        {
+          "filename": "office_visit_021.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 977,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_022.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_022.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 860,
+          "error": null
+        },
+        {
+          "filename": "office_visit_022.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 860,
+          "error": null
+        },
+        {
+          "filename": "office_visit_022.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 860,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_023.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_023.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 990,
+          "error": null
+        },
+        {
+          "filename": "office_visit_023.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 990,
+          "error": null
+        },
+        {
+          "filename": "office_visit_023.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 990,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_024.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_024.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0007,
+          "human_probability": 0.9993,
+          "confidence": 0.9986,
+          "raw_label": "Real",
+          "raw_score": 0.9993,
+          "text_length": 996,
+          "error": null
+        },
+        {
+          "filename": "office_visit_024.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 996,
+          "error": null
+        },
+        {
+          "filename": "office_visit_024.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0007,
+          "human_probability": 0.9993,
+          "confidence": 0.9986,
+          "raw_label": "Real",
+          "raw_score": 0.9993,
+          "text_length": 996,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0006,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_025.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_025.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1040,
+          "error": null
+        },
+        {
+          "filename": "office_visit_025.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1040,
+          "error": null
+        },
+        {
+          "filename": "office_visit_025.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1040,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_026.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_026.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 936,
+          "error": null
+        },
+        {
+          "filename": "office_visit_026.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 936,
+          "error": null
+        },
+        {
+          "filename": "office_visit_026.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9996,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 936,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_027.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_027.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9993,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 963,
+          "error": null
+        },
+        {
+          "filename": "office_visit_027.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 963,
+          "error": null
+        },
+        {
+          "filename": "office_visit_027.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9993,
+          "raw_label": "Real",
+          "raw_score": 0.9997,
+          "text_length": 963,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0003,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_028.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_028.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9992,
+          "raw_label": "Real",
+          "raw_score": 0.9996,
+          "text_length": 975,
+          "error": null
+        },
+        {
+          "filename": "office_visit_028.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 975,
+          "error": null
+        },
+        {
+          "filename": "office_visit_028.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9992,
+          "raw_label": "Real",
+          "raw_score": 0.9996,
+          "text_length": 975,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0004,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_029.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_029.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9993,
+          "raw_label": "Real",
+          "raw_score": 0.9996,
+          "text_length": 1005,
+          "error": null
+        },
+        {
+          "filename": "office_visit_029.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1005,
+          "error": null
+        },
+        {
+          "filename": "office_visit_029.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9993,
+          "raw_label": "Real",
+          "raw_score": 0.9996,
+          "text_length": 1005,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0004,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_030.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_030.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 935,
+          "error": null
+        },
+        {
+          "filename": "office_visit_030.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 935,
+          "error": null
+        },
+        {
+          "filename": "office_visit_030.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 935,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_031.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_031.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 877,
+          "error": null
+        },
+        {
+          "filename": "office_visit_031.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 877,
+          "error": null
+        },
+        {
+          "filename": "office_visit_031.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 877,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_032.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_032.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 946,
+          "error": null
+        },
+        {
+          "filename": "office_visit_032.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 946,
+          "error": null
+        },
+        {
+          "filename": "office_visit_032.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 946,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_033.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_033.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 942,
+          "error": null
+        },
+        {
+          "filename": "office_visit_033.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 942,
+          "error": null
+        },
+        {
+          "filename": "office_visit_033.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 942,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_034.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_034.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1008,
+          "error": null
+        },
+        {
+          "filename": "office_visit_034.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 1008,
+          "error": null
+        },
+        {
+          "filename": "office_visit_034.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0002,
+          "human_probability": 0.9998,
+          "confidence": 0.9997,
+          "raw_label": "Real",
+          "raw_score": 0.9998,
+          "text_length": 1008,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0002,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    },
+    {
+      "filename": "office_visit_035.txt",
+      "individual_results": [
+        {
+          "filename": "office_visit_035.txt",
+          "model_name": "openai",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9993,
+          "raw_label": "Real",
+          "raw_score": 0.9996,
+          "text_length": 995,
+          "error": null
+        },
+        {
+          "filename": "office_visit_035.txt",
+          "model_name": "chatgpt",
+          "is_ai_generated": false,
+          "ai_probability": 0.0003,
+          "human_probability": 0.9997,
+          "confidence": 0.9994,
+          "raw_label": "Human",
+          "raw_score": 0.9997,
+          "text_length": 995,
+          "error": null
+        },
+        {
+          "filename": "office_visit_035.txt",
+          "model_name": "roberta-base",
+          "is_ai_generated": false,
+          "ai_probability": 0.0004,
+          "human_probability": 0.9996,
+          "confidence": 0.9993,
+          "raw_label": "Real",
+          "raw_score": 0.9996,
+          "text_length": 995,
+          "error": null
+        }
+      ],
+      "aggregate": {
+        "average_ai_probability": 0.0004,
+        "consensus_ai_count": 0,
+        "total_models": 3,
+        "majority_ai": false
+      }
+    }
+  ]
+}

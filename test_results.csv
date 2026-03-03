@@ -1,0 +1,4 @@
+file_name,Abnormal_detected,AI-Classification,ai_probability,Failed_Validation,explanation,contributing_components
+ai_generated_note_1.txt,Yes,human_created,0.0014,Yes,Low AI probability (0.1%); Potentially invalid drug: adequate; AI-associated phrase detected: 'Furthermore'; AI-associated phrase detected: 'Additionally',"Style, Medical_Entities"
+ai_generated_note_2.txt,Yes,human_created,0.0002,Yes,Low AI probability (0.0%); AI-associated phrase detected: 'Furthermore'; AI-associated phrase detected: 'Moreover'; AI-associated phrase detected: 'Additionally',Style
+dangerous_dosages.txt,Yes,AIText,0.7884,Yes,High AI probability (78.8%); Potentially dangerous dosage: metformin 5000.0mg (max single dose typically 1000mg); Potentially dangerous dosage: lisinopril 200.0mg (max single dose typically 80mg); Potentially invalid drug: oxycodone,"AI_Detection, Consistency, Style, Medical_Entities"
