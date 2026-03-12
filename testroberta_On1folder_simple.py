@@ -1,13 +1,26 @@
 """
 Simple RoBERTa AI Text Detector
-Usage: python test_roberta_simple.py <input_file_or_folder> [output_csv]
+Usage: python test_roberta_simple.py <input_file_or_folder> [output_csv] [--model openai|fakespot]
 """
 
 import sys
 import os
 import csv
 import glob
+import argparse
 from transformers import pipeline
+
+# Model configurations
+MODELS = {
+    'openai': {
+        'name': 'RoBERTa OpenAI Detector',
+        'path': '~/.cache/huggingface/hub/models--roberta-base-openai-detector/snapshots/6cba99c003b711c7fe94f8a3aa2be35a792cb6fa/'
+    },
+    'fakespot': {
+        'name': 'Fakespot AI Detector',
+        'path': '~/.cache/huggingface/hub/models--fakespot-ai--roberta-base-ai-text-detection-v1/snapshots/f9cdb14d1f8b105f597d80fa7b56f20c6ea0e9db/'
+    }
+}
 
 
 def analyze_file(file_path, classifier):
@@ -41,14 +54,15 @@ def analyze_file(file_path, classifier):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python test_roberta_simple.py <input_file_or_folder> [output_csv]")
-        print("Examples:")
-        print("  python test_roberta_simple.py ./note_data/cms_notes/discharge_summary_018.txt results.csv")
-        print("  python test_roberta_simple.py ./note_data/cms_notes/ results.csv")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description='RoBERTa AI Text Detector')
+    parser.add_argument('input_path', help='Input file or folder to analyze')
+    parser.add_argument('output_csv', nargs='?', default=None, help='Output CSV file (optional)')
+    parser.add_argument('--model', '-m', choices=['openai', 'fakespot'], default='openai',
+                        help='Model to use: openai (default) or fakespot')
 
-    input_path = sys.argv[1]
+    args = parser.parse_args()
+    input_path = args.input_path
+    model_choice = args.model
 
     # Determine if input is file or folder
     if os.path.isdir(input_path):
@@ -67,8 +81,8 @@ def main():
         sys.exit(1)
 
     # Output CSV file
-    if len(sys.argv) >= 3:
-        output_csv = sys.argv[2]
+    if args.output_csv:
+        output_csv = args.output_csv
     else:
         if is_folder:
             folder_name = os.path.basename(os.path.normpath(input_path))
@@ -77,18 +91,21 @@ def main():
             base_name = os.path.splitext(os.path.basename(input_path))[0]
             output_csv = f"{base_name}_results.csv"
 
+    # Get model configuration
+    model_config = MODELS[model_choice]
+
     print(f"{'='*60}")
     print(f"RoBERTa AI Text Detection")
     print(f"{'='*60}")
+    print(f"Model: {model_config['name']}")
     print(f"Input: {input_path}")
     print(f"Files to process: {len(file_list)}")
     print(f"Output CSV: {output_csv}")
     print(f"{'='*60}\n")
 
     # Load RoBERTa model from local path
-    print("Loading RoBERTa AI detector...")
-    model_path = "~/.cache/huggingface/hub/models--roberta-base-openai-detector/snapshots/6cba99c003b711c7fe94f8a3aa2be35a792cb6fa/"
-    model_path = model_path.replace("~", "/Users/max-imac")
+    print(f"Loading {model_config['name']}...")
+    model_path = model_config['path'].replace("~", os.path.expanduser("~"))
     classifier = pipeline("text-classification", model=model_path, local_files_only=True)
 
     print(f"\nProcessing {len(file_list)} file(s)...\n")
