@@ -41,7 +41,19 @@ class DetectorType(Enum):
     FAST_DETECTGPT = "fast_detectgpt"
     LLMDET = "llmdet"
     ROUGE_CHECKER = "rouge_checker"
+    DESKLIB = "desklib"
     ENSEMBLE = "ensemble"
+
+
+@dataclass
+class AITextAnalysis:
+    """Detailed analysis of AI-classified text."""
+    has_duplicates: bool = False
+    duplicate_phrases: List[str] = field(default_factory=list)
+    duplicate_ratio: float = 0.0
+    high_ai_segments: List[Dict] = field(default_factory=list)  # segments with high AI probability
+    primary_reason: str = ""  # main reason for classification
+    contributing_factors: List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -53,6 +65,7 @@ class AIDetectionResult:
     confidence: float = 0.0
     details: Dict = field(default_factory=dict)
     error: Optional[str] = None
+    analysis: Optional[AITextAnalysis] = None  # detailed analysis for AI-classified texts
 
 
 @dataclass
@@ -370,31 +383,80 @@ class HuggingFaceDetector(BaseAIDetector):
     Uses RoBERTa-based models for offline AI detection.
     """
 
-    # Default local model path (update this path for your system)
-    DEFAULT_MODEL_PATH = "~/.cache/huggingface/hub/models--roberta-base-openai-detector/snapshots/6cba99c003b711c7fe94f8a3aa2be35a792cb6fa/"
+    # Default HuggingFace cache directory
+    HF_CACHE_DIR = os.path.expanduser("~/.cache/huggingface/hub/")
 
-    def __init__(self, model_name: str = None):
+    # Default model to use
+    DEFAULT_MODEL = "roberta-base-openai-detector"
+
+    # Model name aliases for convenience
+    MODEL_ALIASES = {
+        "fakespot": "fakespot-ai/roberta-base-ai-text-detection-v1",
+        "openai": "openai-community/roberta-base-openai-detector",
+        "roberta": "roberta-base-openai-detector",
+        "chatgpt": "Hello-SimpleAI/chatgpt-detector-roberta",
+        "desklib": "desklib/ai-text-detector-v1.01",
+    }
+
+    def __init__(self, model_name: str = None, cache_dir: str = None):
         """
         Initialize with a Hugging Face model.
 
         Args:
-            model_name: Model path or name. If None, uses DEFAULT_MODEL_PATH.
+            model_name: Model name or alias. If None, uses DEFAULT_MODEL.
                 Options:
-                - None (uses local DEFAULT_MODEL_PATH)
+                - None (uses default roberta-base-openai-detector)
+                - Alias: "fakespot", "openai", "roberta", "chatgpt"
+                - Full model name: "fakespot-ai/roberta-base-ai-text-detection-v1"
                 - Full local path to model directory
-                - "roberta-base-openai-detector" (HuggingFace hub name)
+            cache_dir: HuggingFace cache directory (default: ~/.cache/huggingface/hub/)
         """
+        self.cache_dir = cache_dir or self.HF_CACHE_DIR
+
         if model_name is None:
-            # Use default local path, expand ~ to home directory
-            self.model_name = os.path.expanduser(self.DEFAULT_MODEL_PATH)
+            self.model_name = self.DEFAULT_MODEL
         else:
-            self.model_name = os.path.expanduser(model_name)
+            # Check if it's an alias
+            self.model_name = self.MODEL_ALIASES.get(model_name.lower(), model_name)
+
         self._pipeline = None
         self._load_error = None
+        self._resolved_path = None
+
+    def _resolve_model_path(self) -> str:
+        """
+        Resolve model name to local cache path if available.
+
+        Returns:
+            Resolved model path or original model name
+        """
+        # If it's already a full path, use it directly
+        if os.path.isdir(os.path.expanduser(self.model_name)):
+            return os.path.expanduser(self.model_name)
+
+        # Try to find in HuggingFace cache
+        # Cache folder format: models--{org}--{model} or models--{model}
+        cache_folder_name = "models--" + self.model_name.replace("/", "--")
+        cache_path = os.path.join(self.cache_dir, cache_folder_name)
+
+        if os.path.isdir(cache_path):
+            # Find the latest snapshot
+            snapshots_dir = os.path.join(cache_path, "snapshots")
+            if os.path.isdir(snapshots_dir):
+                snapshots = os.listdir(snapshots_dir)
+                if snapshots:
+                    # Use the first snapshot (usually there's only one)
+                    snapshot_path = os.path.join(snapshots_dir, snapshots[0])
+                    if os.path.isdir(snapshot_path):
+                        return snapshot_path
+
+        # Return original name - let transformers handle it
+        return self.model_name
 
     @property
     def name(self) -> str:
-        return f"HuggingFace ({self.model_name.split('/')[-1]})"
+        model_short = self.model_name.split('/')[-1] if '/' in self.model_name else self.model_name
+        return f"HuggingFace ({model_short})"
 
     def _load_model(self):
         if self._pipeline is not None or self._load_error is not None:
@@ -402,9 +464,13 @@ class HuggingFaceDetector(BaseAIDetector):
 
         try:
             from transformers import pipeline
+
+            # Resolve model path from cache
+            self._resolved_path = self._resolve_model_path()
+
             self._pipeline = pipeline(
                 "text-classification",
-                model=self.model_name,
+                model=self._resolved_path,
                 truncation=True,
                 max_length=512,
                 local_files_only=True  # Always use locally cached models, never download
@@ -414,13 +480,26 @@ class HuggingFaceDetector(BaseAIDetector):
         except Exception as e:
             error_msg = str(e)
             if "local_files_only" in error_msg or "not found" in error_msg.lower():
+                available = self._list_available_models()
                 self._load_error = (
-                    f"Model '{self.model_name}' not found in local cache. "
-                    f"Download it first with: python -c \"from transformers import pipeline; "
+                    f"Model '{self.model_name}' not found in local cache.\n"
+                    f"Available models: {', '.join(available) if available else 'none'}\n"
+                    f"Download with: python -c \"from transformers import pipeline; "
                     f"pipeline('text-classification', model='{self.model_name}')\""
                 )
             else:
                 self._load_error = f"Failed to load model: {error_msg}"
+
+    def _list_available_models(self) -> List[str]:
+        """List available models in the cache directory."""
+        models = []
+        if os.path.isdir(self.cache_dir):
+            for item in os.listdir(self.cache_dir):
+                if item.startswith("models--"):
+                    # Convert cache folder name back to model name
+                    model_name = item[8:].replace("--", "/")  # Remove "models--" prefix
+                    models.append(model_name)
+        return models
 
     def detect(self, text: str) -> AIDetectionResult:
         error = self._validate_text(text)
@@ -462,6 +541,7 @@ class HuggingFaceDetector(BaseAIDetector):
                 confidence=abs(ai_prob - 0.5) * 2,
                 details={
                     "model": self.model_name,
+                    "resolved_path": self._resolved_path,
                     "raw_label": result["label"],
                     "raw_score": result["score"]
                 }
@@ -917,6 +997,205 @@ class LLMDetDetector(BaseAIDetector):
             )
 
 
+class DesklibDetector(BaseAIDetector):
+    """
+    Desklib AI Text Detector - uses DeBERTa-v3-large fine-tuned model.
+
+    Based on microsoft/deberta-v3-large, this model leads the RAID Benchmark
+    for AI Detection. Uses mean pooling and a linear classifier.
+
+    Model: desklib/ai-text-detector-v1.01
+    Paper: https://huggingface.co/desklib/ai-text-detector-v1.01
+    """
+
+    MODEL_NAME = "desklib/ai-text-detector-v1.01"
+
+    def __init__(
+        self,
+        model_path: Optional[str] = None,
+        max_length: int = 768,
+        threshold: float = 0.5,
+        local_files_only: bool = False
+    ):
+        """
+        Initialize Desklib detector.
+
+        Args:
+            model_path: Path to model (defaults to HuggingFace hub model)
+            max_length: Maximum token length (default 768)
+            threshold: Classification threshold (default 0.5)
+            local_files_only: If True, only use locally cached model
+        """
+        self.model_path = model_path or self.MODEL_NAME
+        self.max_length = max_length
+        self.threshold = threshold
+        self.local_files_only = local_files_only
+        self._model = None
+        self._tokenizer = None
+        self._device = None
+        self._load_error = None
+
+    @property
+    def name(self) -> str:
+        return "Desklib"
+
+    def _load_model(self):
+        if self._load_error is not None:
+            return
+        if self._model is not None:
+            return
+
+        try:
+            import torch
+            import torch.nn as nn
+            from transformers import AutoTokenizer, AutoConfig, DebertaV2Model, PreTrainedModel
+
+            # Define the custom model architecture matching Desklib's saved format
+            class DesklibAIDetectionModel(PreTrainedModel):
+                config_class = AutoConfig
+
+                def __init__(self, config):
+                    super().__init__(config)
+                    self.model = DebertaV2Model(config)
+                    self.classifier = nn.Linear(config.hidden_size, 1)
+                    self.post_init()
+
+                def forward(self, input_ids, attention_mask=None, labels=None):
+                    outputs = self.model(input_ids, attention_mask=attention_mask)
+                    last_hidden_state = outputs[0]
+
+                    # Mean pooling
+                    input_mask_expanded = attention_mask.unsqueeze(-1).expand(last_hidden_state.size()).float()
+                    sum_embeddings = torch.sum(last_hidden_state * input_mask_expanded, dim=1)
+                    sum_mask = torch.clamp(input_mask_expanded.sum(dim=1), min=1e-9)
+                    pooled_output = sum_embeddings / sum_mask
+
+                    logits = self.classifier(pooled_output)
+                    loss = None
+                    if labels is not None:
+                        loss_fct = nn.BCEWithLogitsLoss()
+                        loss = loss_fct(logits.view(-1), labels.float())
+
+                    return {"logits": logits, "loss": loss} if loss else {"logits": logits}
+
+            # Detect device
+            self._device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+            # Load tokenizer and model
+            print(f"Loading Desklib model from: {self.model_path}")
+            print(f"Using device: {self._device}")
+
+            self._tokenizer = AutoTokenizer.from_pretrained(
+                self.model_path,
+                local_files_only=self.local_files_only
+            )
+
+            # Load config and initialize model
+            config = AutoConfig.from_pretrained(
+                self.model_path,
+                local_files_only=self.local_files_only
+            )
+            self._model = DesklibAIDetectionModel.from_pretrained(
+                self.model_path,
+                config=config,
+                local_files_only=self.local_files_only,
+                ignore_mismatched_sizes=True
+            )
+            self._model.to(self._device)
+            self._model.eval()
+
+            print("Desklib model loaded successfully!")
+
+        except ImportError:
+            self._load_error = "transformers/torch not installed. Run: pip install transformers torch"
+        except Exception as e:
+            error_msg = str(e)
+            if "local_files_only" in error_msg or "not found" in error_msg.lower():
+                self._load_error = (
+                    f"Model '{self.model_path}' not found. "
+                    f"Download it first with: "
+                    f"python -c \"from transformers import AutoTokenizer, AutoModel; "
+                    f"AutoTokenizer.from_pretrained('{self.model_path}'); "
+                    f"AutoModel.from_pretrained('{self.model_path}')\""
+                )
+            else:
+                self._load_error = f"Failed to load Desklib model: {error_msg}"
+
+    def _predict(self, text: str) -> Tuple[float, int]:
+        """
+        Predict AI probability for a single text.
+
+        Args:
+            text: Input text to analyze
+
+        Returns:
+            Tuple of (probability, label)
+        """
+        import torch
+
+        encoded = self._tokenizer(
+            text,
+            padding='max_length',
+            truncation=True,
+            max_length=self.max_length,
+            return_tensors='pt'
+        )
+        input_ids = encoded['input_ids'].to(self._device)
+        attention_mask = encoded['attention_mask'].to(self._device)
+
+        with torch.no_grad():
+            outputs = self._model(input_ids=input_ids, attention_mask=attention_mask)
+            logits = outputs["logits"]
+            probability = torch.sigmoid(logits).item()
+
+        label = 1 if probability >= self.threshold else 0
+        return probability, label
+
+    def detect(self, text: str) -> AIDetectionResult:
+        error = self._validate_text(text)
+        if error:
+            return AIDetectionResult(
+                detector_name=self.name,
+                is_ai_generated=False,
+                ai_probability=0.0,
+                error=error
+            )
+
+        self._load_model()
+
+        if self._load_error:
+            return AIDetectionResult(
+                detector_name=self.name,
+                is_ai_generated=False,
+                ai_probability=0.0,
+                error=self._load_error
+            )
+
+        try:
+            probability, label = self._predict(text)
+
+            return AIDetectionResult(
+                detector_name=self.name,
+                is_ai_generated=label == 1,
+                ai_probability=probability,
+                confidence=abs(probability - 0.5) * 2,
+                details={
+                    "model": self.model_path,
+                    "threshold": self.threshold,
+                    "max_length": self.max_length,
+                    "text_length": len(text)
+                }
+            )
+
+        except Exception as e:
+            return AIDetectionResult(
+                detector_name=self.name,
+                is_ai_generated=False,
+                ai_probability=0.0,
+                error=f"Desklib detection failed: {str(e)}"
+            )
+
+
 class ROUGESimilarityChecker(BaseAIDetector):
     """
     ROUGE-based similarity checker.
@@ -1142,6 +1421,252 @@ class EnsembleDetector(BaseAIDetector):
 
 
 # =============================================================================
+# Text Analysis Utilities
+# =============================================================================
+
+def detect_duplicate_content(text: str, min_phrase_length: int = 20, min_occurrences: int = 2) -> Tuple[bool, List[str], float]:
+    """
+    Detect duplicate/repeated phrases in text.
+
+    Args:
+        text: Input text to analyze
+        min_phrase_length: Minimum characters for a phrase to be considered
+        min_occurrences: Minimum times a phrase must appear to be flagged
+
+    Returns:
+        Tuple of (has_duplicates, list of duplicate phrases, duplicate ratio)
+    """
+    # Normalize text
+    normalized = ' '.join(text.lower().split())
+
+    # Split into sentences
+    sentences = re.split(r'[.!?]+', normalized)
+    sentences = [s.strip() for s in sentences if len(s.strip()) >= min_phrase_length]
+
+    # Find duplicate sentences
+    sentence_counts = {}
+    for sentence in sentences:
+        sentence_counts[sentence] = sentence_counts.get(sentence, 0) + 1
+
+    duplicates = [s for s, count in sentence_counts.items() if count >= min_occurrences]
+
+    # Also check for repeated phrases within sentences (n-grams)
+    words = normalized.split()
+    phrase_counts = {}
+
+    # Check 5-8 word phrases
+    for n in range(5, 9):
+        if len(words) < n:
+            continue
+        for i in range(len(words) - n + 1):
+            phrase = ' '.join(words[i:i+n])
+            if len(phrase) >= min_phrase_length:
+                phrase_counts[phrase] = phrase_counts.get(phrase, 0) + 1
+
+    repeated_phrases = [p for p, count in phrase_counts.items() if count >= min_occurrences]
+
+    # Combine and dedupe (prefer longer phrases)
+    all_duplicates = list(set(duplicates + repeated_phrases))
+    all_duplicates.sort(key=len, reverse=True)
+
+    # Remove phrases that are substrings of longer duplicates
+    filtered_duplicates = []
+    for phrase in all_duplicates:
+        is_substring = any(phrase in longer and phrase != longer for longer in filtered_duplicates)
+        if not is_substring:
+            filtered_duplicates.append(phrase)
+
+    # Calculate duplicate ratio (how much of text is duplicated)
+    duplicate_chars = sum(len(p) * (sentence_counts.get(p, 1) + phrase_counts.get(p, 1) - 1)
+                         for p in filtered_duplicates)
+    duplicate_ratio = min(duplicate_chars / len(normalized), 1.0) if normalized else 0.0
+
+    return len(filtered_duplicates) > 0, filtered_duplicates[:5], duplicate_ratio
+
+
+def analyze_text_segments(
+    text: str,
+    detector: 'BaseAIDetector',
+    segment_size: int = 200,
+    overlap: int = 50
+) -> List[Dict]:
+    """
+    Analyze text in segments to identify which portions have high AI probability.
+
+    Args:
+        text: Input text to analyze
+        detector: AI detector to use
+        segment_size: Approximate words per segment
+        overlap: Word overlap between segments
+
+    Returns:
+        List of dictionaries with segment info and AI probability
+    """
+    words = text.split()
+
+    if len(words) < segment_size:
+        # Text too short to segment meaningfully
+        return []
+
+    segments = []
+    i = 0
+    segment_num = 1
+
+    while i < len(words):
+        end = min(i + segment_size, len(words))
+        segment_text = ' '.join(words[i:end])
+
+        # Get start/end character positions for reference
+        char_start = len(' '.join(words[:i])) + (1 if i > 0 else 0)
+        char_end = char_start + len(segment_text)
+
+        try:
+            result = detector.detect(segment_text)
+            segments.append({
+                "segment_num": segment_num,
+                "char_start": char_start,
+                "char_end": char_end,
+                "word_start": i,
+                "word_end": end,
+                "ai_probability": result.ai_probability,
+                "is_ai": result.is_ai_generated,
+                "preview": segment_text[:100] + "..." if len(segment_text) > 100 else segment_text
+            })
+        except Exception:
+            pass
+
+        i += segment_size - overlap
+        segment_num += 1
+
+        # Limit to reasonable number of segments
+        if segment_num > 20:
+            break
+
+    return segments
+
+
+def determine_ai_reason(
+    result: 'AIDetectionResult',
+    has_duplicates: bool,
+    duplicate_ratio: float,
+    high_ai_segments: List[Dict]
+) -> Tuple[str, List[str]]:
+    """
+    Determine the primary reason for AI classification.
+
+    Args:
+        result: Detection result
+        has_duplicates: Whether duplicates were found
+        duplicate_ratio: Ratio of duplicate content
+        high_ai_segments: Segments with high AI probability
+
+    Returns:
+        Tuple of (primary_reason, list of contributing factors)
+    """
+    reasons = []
+    factors = []
+
+    # Check for duplicates
+    if has_duplicates:
+        if duplicate_ratio > 0.3:
+            reasons.append(("High duplicate content", 0.9))
+            factors.append(f"Duplicate content ratio: {duplicate_ratio:.1%}")
+        elif duplicate_ratio > 0.1:
+            reasons.append(("Moderate duplicate content", 0.6))
+            factors.append(f"Duplicate content ratio: {duplicate_ratio:.1%}")
+
+    # Check segment consistency
+    if high_ai_segments:
+        ai_segments = [s for s in high_ai_segments if s.get("ai_probability", 0) > 0.7]
+        if len(ai_segments) == len(high_ai_segments) and len(high_ai_segments) > 1:
+            reasons.append(("Uniformly high AI probability across all segments", 0.85))
+            factors.append("All text segments show AI patterns")
+        elif ai_segments:
+            segment_nums = [s["segment_num"] for s in ai_segments]
+            reasons.append(("Specific segments show high AI probability", 0.7))
+            factors.append(f"High AI segments: {segment_nums}")
+
+    # Check detector-specific details
+    details = result.details or {}
+
+    if "curvature" in details:
+        curvature = details["curvature"]
+        if curvature > 17:
+            reasons.append(("High text predictability (curvature analysis)", 0.75))
+            factors.append(f"Curvature score: {curvature:.2f}")
+
+    if "mean_log_prob" in details:
+        mlp = details["mean_log_prob"]
+        if mlp > -4:
+            reasons.append(("High token probability (low perplexity)", 0.7))
+            factors.append(f"Mean log probability: {mlp:.2f}")
+
+    if "raw_label" in details:
+        factors.append(f"Model classification: {details['raw_label']}")
+
+    if "most_likely_source" in details:
+        source = details["most_likely_source"]
+        if source != "Human_write":
+            reasons.append((f"Text patterns match {source} model", 0.8))
+            factors.append(f"Identified source: {source}")
+
+    # Check overall probability
+    if result.ai_probability > 0.9:
+        reasons.append(("Very high overall AI probability", 0.95))
+    elif result.ai_probability > 0.7:
+        reasons.append(("High overall AI probability", 0.8))
+
+    # Sort by confidence and pick primary
+    reasons.sort(key=lambda x: x[1], reverse=True)
+    primary_reason = reasons[0][0] if reasons else "AI patterns detected in text structure"
+
+    # Add probability as a factor
+    factors.insert(0, f"AI probability: {result.ai_probability:.1%}")
+
+    return primary_reason, factors
+
+
+def perform_detailed_analysis(
+    text: str,
+    result: 'AIDetectionResult',
+    detector: 'BaseAIDetector'
+) -> AITextAnalysis:
+    """
+    Perform detailed analysis on AI-classified text.
+
+    Args:
+        text: Original text
+        result: Detection result
+        detector: Detector used
+
+    Returns:
+        AITextAnalysis with detailed findings
+    """
+    analysis = AITextAnalysis()
+
+    # Detect duplicates
+    has_duplicates, duplicate_phrases, duplicate_ratio = detect_duplicate_content(text)
+    analysis.has_duplicates = has_duplicates
+    analysis.duplicate_phrases = duplicate_phrases
+    analysis.duplicate_ratio = duplicate_ratio
+
+    # Analyze segments (only for longer texts to avoid redundant processing)
+    if len(text) > 500:
+        segments = analyze_text_segments(text, detector)
+        # Keep only high AI segments
+        analysis.high_ai_segments = [s for s in segments if s.get("ai_probability", 0) > 0.6]
+
+    # Determine reason
+    primary_reason, factors = determine_ai_reason(
+        result, has_duplicates, duplicate_ratio, analysis.high_ai_segments
+    )
+    analysis.primary_reason = primary_reason
+    analysis.contributing_factors = factors
+
+    return analysis
+
+
+# =============================================================================
 # Factory
 # =============================================================================
 
@@ -1207,6 +1732,14 @@ class AIDetectorFactory:
                 threshold=kwargs.get("threshold", 0.3)
             )
 
+        elif detector_type == DetectorType.DESKLIB:
+            return DesklibDetector(
+                model_path=kwargs.get("model_path"),
+                max_length=kwargs.get("max_length", 768),
+                threshold=kwargs.get("threshold", 0.5),
+                local_files_only=kwargs.get("local_files_only", False)
+            )
+
         elif detector_type == DetectorType.ENSEMBLE:
             detectors = kwargs.get("detectors", [])
             if not detectors:
@@ -1264,6 +1797,7 @@ class AIDetectorFactory:
             "fast_detectgpt": "Fast-DetectGPT - Curvature-based detection",
             "llmdet": "LLMDet - Proxy perplexity based detection with LLM source identification",
             "rouge_checker": "ROUGE Similarity - Pattern matching with ROUGE metrics",
+            "desklib": "Desklib - DeBERTa-v3-large based detector (RAID benchmark leader)",
             "ensemble": "Ensemble - Combine multiple detectors with voting"
         }
 
@@ -1312,12 +1846,13 @@ def load_notes_from_folder(folder_path: str) -> List[Dict]:
     return notes
 
 
-def generate_explanation(result: AIDetectionResult) -> str:
+def generate_explanation(result: AIDetectionResult, include_analysis: bool = True) -> str:
     """
     Generate a human-readable explanation for the classification.
 
     Args:
         result: AIDetectionResult from a detector
+        include_analysis: Whether to include detailed analysis
 
     Returns:
         Explanation string
@@ -1346,6 +1881,32 @@ def generate_explanation(result: AIDetectionResult) -> str:
     # Add confidence level
     explanations.append(f"Confidence: {result.confidence:.1%}")
 
+    # Add detailed analysis for AI-classified texts
+    if include_analysis and result.analysis and result.is_ai_generated:
+        analysis = result.analysis
+
+        # Add primary reason
+        if analysis.primary_reason:
+            explanations.append(f"Primary reason: {analysis.primary_reason}")
+
+        # Add duplicate info
+        if analysis.has_duplicates:
+            explanations.append(f"Duplicate content detected ({analysis.duplicate_ratio:.1%} of text)")
+            if analysis.duplicate_phrases:
+                sample = analysis.duplicate_phrases[0][:50]
+                explanations.append(f"Sample duplicate: '{sample}...'")
+
+        # Add segment info
+        if analysis.high_ai_segments:
+            num_segments = len(analysis.high_ai_segments)
+            avg_prob = sum(s["ai_probability"] for s in analysis.high_ai_segments) / num_segments
+            explanations.append(f"High AI segments: {num_segments} (avg prob: {avg_prob:.1%})")
+
+        # Add contributing factors
+        if analysis.contributing_factors:
+            factors_str = "; ".join(analysis.contributing_factors[:3])
+            explanations.append(f"Factors: {factors_str}")
+
     # Add details if available
     if result.details:
         if "raw_label" in result.details:
@@ -1356,6 +1917,43 @@ def generate_explanation(result: AIDetectionResult) -> str:
             explanations.append(f"Likely source: {result.details['most_likely_source']}")
 
     return " | ".join(explanations)
+
+
+def generate_analysis_reason(result: AIDetectionResult) -> str:
+    """
+    Generate a concise analysis reason for CSV output.
+
+    Args:
+        result: AIDetectionResult with analysis
+
+    Returns:
+        Concise reason string
+    """
+    if not result.is_ai_generated:
+        return "N/A - Human written"
+
+    if result.error:
+        return f"Error: {result.error}"
+
+    if not result.analysis:
+        return "AI patterns detected"
+
+    analysis = result.analysis
+    reasons = []
+
+    # Primary reason
+    if analysis.primary_reason:
+        reasons.append(analysis.primary_reason)
+
+    # Duplicate indicator
+    if analysis.has_duplicates:
+        reasons.append(f"Duplicate: {analysis.duplicate_ratio:.0%}")
+
+    # High segments indicator
+    if analysis.high_ai_segments:
+        reasons.append(f"High-AI segments: {len(analysis.high_ai_segments)}")
+
+    return " | ".join(reasons) if reasons else "AI patterns detected"
 
 
 def save_results_csv(
@@ -1373,7 +1971,11 @@ def save_results_csv(
         1. file_name: Name of the document
         2. classification: "AI_text" or "human_created"
         3. ai_probability: Probability score (0.0 to 1.0)
-        4. explanation: Detailed explanation of the classification
+        4. analysis_reason: Primary reason for AI classification (for AI_text only)
+        5. has_duplicates: Whether duplicate content was detected
+        6. duplicate_ratio: Percentage of text that is duplicated
+        7. high_ai_segments: Number of text segments with high AI probability
+        8. explanation: Detailed explanation of the classification
     """
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -1383,6 +1985,10 @@ def save_results_csv(
             "file_name",
             "classification",
             "ai_probability",
+            "analysis_reason",
+            "has_duplicates",
+            "duplicate_ratio",
+            "high_ai_segments",
             "explanation"
         ])
 
@@ -1392,6 +1998,10 @@ def save_results_csv(
                 r["filename"],
                 r["classification"],
                 f"{r['ai_probability']:.4f}",
+                r.get("analysis_reason", ""),
+                r.get("has_duplicates", ""),
+                r.get("duplicate_ratio", ""),
+                r.get("high_ai_segments", ""),
                 r["explanation"]
             ])
 
@@ -1450,14 +2060,35 @@ def run_detection(
             # Determine classification
             classification = "AI_text" if result.is_ai_generated else "human_created"
 
+            # Perform detailed analysis for AI-classified texts
+            if result.is_ai_generated and not result.error:
+                result.analysis = perform_detailed_analysis(text, result, detector)
+
             # Generate explanation
             explanation = generate_explanation(result)
+
+            # Generate analysis reason
+            analysis_reason = generate_analysis_reason(result)
+
+            # Extract analysis fields
+            has_duplicates = ""
+            duplicate_ratio = ""
+            high_ai_segments = ""
+
+            if result.analysis:
+                has_duplicates = "Yes" if result.analysis.has_duplicates else "No"
+                duplicate_ratio = f"{result.analysis.duplicate_ratio:.1%}"
+                high_ai_segments = str(len(result.analysis.high_ai_segments))
 
             # Store result
             result_dict = {
                 "filename": filename,
                 "classification": classification,
                 "ai_probability": result.ai_probability,
+                "analysis_reason": analysis_reason,
+                "has_duplicates": has_duplicates,
+                "duplicate_ratio": duplicate_ratio,
+                "high_ai_segments": high_ai_segments,
                 "explanation": explanation,
                 "is_ai_generated": result.is_ai_generated,
                 "confidence": result.confidence,
@@ -1471,6 +2102,12 @@ def run_detection(
             else:
                 print(f"  AI Probability: {result.ai_probability:.2%}")
                 print(f"  Classification: {classification}")
+                if result.is_ai_generated and result.analysis:
+                    print(f"  Analysis: {result.analysis.primary_reason}")
+                    if result.analysis.has_duplicates:
+                        print(f"  Duplicates: {result.analysis.duplicate_ratio:.1%} of text")
+                    if result.analysis.high_ai_segments:
+                        print(f"  High-AI segments: {len(result.analysis.high_ai_segments)}")
 
         except Exception as e:
             print(f"  Error: {e}")
@@ -1478,6 +2115,10 @@ def run_detection(
                 "filename": filename,
                 "classification": "error",
                 "ai_probability": 0.0,
+                "analysis_reason": f"Error: {str(e)}",
+                "has_duplicates": "",
+                "duplicate_ratio": "",
+                "high_ai_segments": "",
                 "explanation": f"Error: {str(e)}",
                 "is_ai_generated": False,
                 "confidence": 0.0,
@@ -1525,7 +2166,7 @@ def main():
         "--detector",
         choices=[
             "huggingface_roberta", "openai_detector", "fast_detectgpt",
-            "binoculars", "llmdet", "rouge_checker"
+            "binoculars", "llmdet", "rouge_checker", "desklib"
         ],
         default="huggingface_roberta",
         help="Detector type to use (default: huggingface_roberta)"
